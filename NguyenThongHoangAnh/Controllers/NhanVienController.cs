@@ -56,7 +56,7 @@ namespace NguyenThongHoangAnh.Controllers
                 if (cbo.Items.Count > 0)
                 {
                     cbo.SelectedIndex = -1;
-                    cbo.SelectedText = "---Chọn---";
+                    cbo.SelectedText = "------Chọn------";
                 }
                 return true;
             }

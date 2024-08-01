@@ -20,6 +20,7 @@ namespace NguyenThongHoangAnh.Screens
     {
         NhanVienController staffController = new NhanVienController();
         private int GioiTinh;
+        private DateTime ngaySinh;
         public NhanVien()
         {
             InitializeComponent();
@@ -41,7 +42,9 @@ namespace NguyenThongHoangAnh.Screens
 
         private void LoadData()
         {
-            dataGridView1.DataSource = staffController.GetStaff();
+            bindingSource1.DataSource = staffController.GetStaff();
+            bindingNavigator1.BindingSource = bindingSource1;
+            dataGridView1.DataSource = bindingSource1;
         }
 
         private void Staff_Load(object sender, EventArgs e)
@@ -54,17 +57,6 @@ namespace NguyenThongHoangAnh.Screens
             staffController.FillCombobox("SELECT MaCTY,TenCTY FROM CongTy", "MaCTY", "TenCTY", cb_congTy);
             LoadData();
             txt_MaNV.ReadOnly = true;
-
-            txt_ten.Text = "Nguyễn Thông Hoàng Anh";
-            txt_cccd.Text = "0986359498";
-            txt_diaChi.Text = "An Phước, Long Thành, Đồng Nai";
-            txt_dienThoai.Text = "0986359498";
-            txt_noiO.Text = "An Phước, Long Thành, Đồng Nai";
-            txt_queQuan.Text = "An Phước, Long Thành, Đồng Nai";
-
-            DateTime selectedDate = new DateTime(1999, 12, 22);
-            dateTimePicker1.Value = selectedDate;
-            rbtn_Nam.Checked = true;
         }
 
         private byte[] GetImage ()
@@ -79,28 +71,46 @@ namespace NguyenThongHoangAnh.Screens
         }
 
         private void btn_add_Click(object sender, EventArgs e)
-        {            
-            int MaDT = int.Parse(cb_danToc.SelectedValue.ToString());
-            int MaTG = int.Parse(cb_tonGiao.SelectedValue.ToString());
-            int MaTD = int.Parse(cb_trinhDo.SelectedValue.ToString());
-            int MaPB = int.Parse(cb_phongBan.SelectedValue.ToString());
-            int MaCV = int.Parse(cb_chucVu.SelectedValue.ToString());
-            int MaCTY = int.Parse(cb_congTy.SelectedValue.ToString());
-            string HoTen = txt_ten.Text;            
-            if (rbtn_Nam.Checked)
-            {
-                GioiTinh = 1;
-            } else if (rbtn_Nu.Checked) {
-                GioiTinh = 0;
-            }
-            DateTime NgaySinh = dateTimePicker1.Value.Date;
-            string DiaChi = txt_diaChi.Text;
-            string CCCD = txt_cccd.Text;
-            string QueQuan = txt_queQuan.Text;
-            string NoiOHienTai = txt_noiO.Text;
-            string DienThoai = txt_dienThoai.Text;
-            byte[] HinhAnh = GetImage();
+        {
+            ThemNhanVien them = new ThemNhanVien();
+            them.themEvent += Them_themEvent;
+            them.ShowDialog();
+            //int MaDT = int.Parse(cb_danToc.SelectedValue.ToString());
+            //int MaTG = int.Parse(cb_tonGiao.SelectedValue.ToString());
+            //int MaTD = int.Parse(cb_trinhDo.SelectedValue.ToString());
+            //int MaPB = int.Parse(cb_phongBan.SelectedValue.ToString());
+            //int MaCV = int.Parse(cb_chucVu.SelectedValue.ToString());
+            //int MaCTY = int.Parse(cb_congTy.SelectedValue.ToString());
+            //string HoTen = txt_ten.Text;            
+            //if (rbtn_Nam.Checked)
+            //{
+            //    GioiTinh = 1;
+            //} else if (rbtn_Nu.Checked) {
+            //    GioiTinh = 0;
+            //}
+            //DateTime NgaySinh = dateTimePicker1.Value.Date;
+            //string DiaChi = txt_diaChi.Text;
+            //string CCCD = txt_cccd.Text;
+            //string QueQuan = txt_queQuan.Text;
+            //string NoiOHienTai = txt_noiO.Text;
+            //string DienThoai = txt_dienThoai.Text;
+            //byte[] HinhAnh = GetImage();
 
+            //bool result = staffController.AddStaff(MaDT, MaTG, MaTD, MaPB, MaCV, MaCTY, HoTen, GioiTinh, NgaySinh, DiaChi, CCCD, QueQuan, NoiOHienTai, DienThoai, HinhAnh);
+
+            //if (result)
+            //{
+            //    LoadData();
+            //    MessageBox.Show("Thêm thành công!", "Thông báo");
+            //}
+            //else
+            //{
+            //    MessageBox.Show("Thêm không thành công!", "Lỗi");
+            //}
+        }
+
+        private void Them_themEvent(int MaDT, int MaTG, int MaTD, int MaPB, int MaCV, int MaCTY, string HoTen, int GioiTinh, DateTime NgaySinh, string DiaChi, string CCCD, string QueQuan, string NoiOHienTai, string DienThoai, byte[] HinhAnh)
+        {
             bool result = staffController.AddStaff(MaDT, MaTG, MaTD, MaPB, MaCV, MaCTY, HoTen, GioiTinh, NgaySinh, DiaChi, CCCD, QueQuan, NoiOHienTai, DienThoai, HinhAnh);
 
             if (result)
@@ -112,37 +122,6 @@ namespace NguyenThongHoangAnh.Screens
             {
                 MessageBox.Show("Thêm không thành công!", "Lỗi");
             }
-        }
-
-        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            _ = new DataGridViewRow();
-            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-            txt_MaNV.Text = Convert.ToString(row.Cells["MaNV"].Value);
-            cb_danToc.Text = Convert.ToString(row.Cells["TenDT"].Value);
-            cb_tonGiao.Text = Convert.ToString(row.Cells["TenTG"].Value);
-            cb_trinhDo.Text = Convert.ToString(row.Cells["TenTD"].Value);
-            cb_phongBan.Text = Convert.ToString(row.Cells["TenPB"].Value);
-            cb_chucVu.Text = Convert.ToString(row.Cells["TenCV"].Value);
-            cb_congTy.Text = Convert.ToString(row.Cells["TenCTY"].Value);
-            txt_ten.Text = Convert.ToString(row.Cells["HoTen"].Value);
-            if (Convert.ToString(row.Cells["GioiTinh1"].Value) == "True")
-            {
-                rbtn_Nam.Checked = true;
-            }
-            else if (Convert.ToString(row.Cells["GioiTinh1"].Value) == "False")
-            {
-                rbtn_Nu.Checked = true;
-            }
-            txt_diaChi.Text = Convert.ToString(row.Cells["DiaChi"].Value);
-            txt_cccd.Text = Convert.ToString(row.Cells["CCCD"].Value);
-            txt_queQuan.Text = Convert.ToString(row.Cells["QueQuan"].Value);
-            txt_noiO.Text = Convert.ToString(row.Cells["NoiOHienTai"].Value);
-            txt_dienThoai.Text = Convert.ToString(row.Cells["DienThoai"].Value);
-            byte[] imageBytes = (byte[])row.Cells["HinhAnh"].Value;
-            MemoryStream stream = new MemoryStream(imageBytes);
-            pictureBox1.Image = Image.FromStream(stream);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
 
         private void btn_delete_Click(object sender, EventArgs e)
@@ -198,6 +177,39 @@ namespace NguyenThongHoangAnh.Screens
             {
                 MessageBox.Show("Sửa không thành công!", "Lỗi");
             }
+        }
+
+        private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
+        {
+
+            _ = new DataGridViewRow();
+            DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
+            txt_MaNV.Text = Convert.ToString(row.Cells["MaNV"].Value);
+            cb_danToc.Text = Convert.ToString(row.Cells["TenDT"].Value);
+            cb_tonGiao.Text = Convert.ToString(row.Cells["TenTG"].Value);
+            cb_trinhDo.Text = Convert.ToString(row.Cells["TenTD"].Value);
+            cb_phongBan.Text = Convert.ToString(row.Cells["TenPB"].Value);
+            cb_chucVu.Text = Convert.ToString(row.Cells["TenCV"].Value);
+            cb_congTy.Text = Convert.ToString(row.Cells["TenCTY"].Value);
+            txt_ten.Text = Convert.ToString(row.Cells["HoTen"].Value);
+            if (Convert.ToString(row.Cells["GioiTinh1"].Value) == "True")
+            {
+                rbtn_Nam.Checked = true;
+            }
+            else if (Convert.ToString(row.Cells["GioiTinh1"].Value) == "False")
+            {
+                rbtn_Nu.Checked = true;
+            }
+            dateTimePicker1.Text = Convert.ToString(row.Cells["NgaySinh"].Value);
+            txt_diaChi.Text = Convert.ToString(row.Cells["DiaChi"].Value);
+            txt_cccd.Text = Convert.ToString(row.Cells["CCCD"].Value);
+            txt_queQuan.Text = Convert.ToString(row.Cells["QueQuan"].Value);
+            txt_noiO.Text = Convert.ToString(row.Cells["NoiOHienTai"].Value);
+            txt_dienThoai.Text = Convert.ToString(row.Cells["DienThoai"].Value);
+            byte[] imageBytes = (byte[])row.Cells["HinhAnh"].Value;
+            MemoryStream stream = new MemoryStream(imageBytes);
+            pictureBox1.Image = Image.FromStream(stream);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
