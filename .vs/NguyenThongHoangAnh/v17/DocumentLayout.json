@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\PMQLNS\\NguyenThongHoangAnh\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|e:\\pmqlns\\nguyenthonghoanganh\\nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|e:\\pmqlns\\nguyenthonghoanganh\\nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "NhanVien.cs",
+              "DocumentMoniker": "E:\\PMQLNS\\NguyenThongHoangAnh\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "ToolTip": "E:\\PMQLNS\\NguyenThongHoangAnh\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "ViewState": "AQIAAGwAAAAAAAAAAAAAAHcAAAAMAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T03:37:55.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "NhanVien.cs [Design]",
+              "DocumentMoniker": "E:\\PMQLNS\\NguyenThongHoangAnh\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
+              "ToolTip": "E:\\PMQLNS\\NguyenThongHoangAnh\\NguyenThongHoangAnh\\Screens\\NhanVien.cs [Design]",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\NhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-01T03:38:33.267Z",
+              "EditorCaption": " [Design]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
