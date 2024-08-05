@@ -3,20 +3,12 @@
   "WorkspaceRootPath": "D:\\IT\\QLNS_C-Sharp_Winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\themhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\themhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\themnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\themnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\themnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\themnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,56 +18,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ThemNhanVien.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "ViewState": "AQIAAEIAAAAAAAAAAAAowEIAAAAMAAAA",
+              "DocumentIndex": 0,
+              "Title": "ThemHopDong.cs [Design]",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemHopDong.cs [Design]",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\ThemHopDong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T13:04:28.475Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "ThemNhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs [Design]",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\ThemNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T13:01:58.836Z",
+              "WhenOpened": "2024-08-05T11:44:55.363Z",
               "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "NhanVien.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "ViewState": "AQIAAMgAAAAAAAAAAAAowNEAAAA/AAAA",
+              "DocumentIndex": 1,
+              "Title": "HopDong.cs [Design]",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\HopDong.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs [Design]",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\HopDong.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T03:37:55.788Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "NhanVien.cs [Design]",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\NhanVien.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\NhanVien.cs [Design]",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\NhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-01T03:38:33.267Z",
+              "WhenOpened": "2024-08-05T11:40:23.54Z",
               "EditorCaption": " [Design]"
             }
           ]

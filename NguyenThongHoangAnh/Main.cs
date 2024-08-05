@@ -123,5 +123,11 @@ namespace NguyenThongHoangAnh
             NhanVien staff = new NhanVien();
             staff.Show();
         }
+
+        private void ts_HopDong_Click(object sender, EventArgs e)
+        {
+            HopDong hd = new HopDong();
+            hd.Show();
+        }
     }
 }

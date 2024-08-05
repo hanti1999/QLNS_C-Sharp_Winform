@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CongTyController.cs" />
+    <Compile Include="Controllers\HopDongController.cs" />
     <Compile Include="Controllers\PhongBanController.cs" />
     <Compile Include="Controllers\DanTocController.cs" />
     <Compile Include="Controllers\TrinhDoController.cs" />
@@ -61,6 +62,12 @@
     <Compile Include="Screens\CongTy.Designer.cs">
       <DependentUpon>CongTy.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\HopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\HopDong.Designer.cs">
+      <DependentUpon>HopDong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\PhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +79,12 @@
     </Compile>
     <Compile Include="Screens\DanToc.Designer.cs">
       <DependentUpon>DanToc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemHopDong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemHopDong.Designer.cs">
+      <DependentUpon>ThemHopDong.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\ThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -152,11 +165,17 @@
     <EmbeddedResource Include="Screens\CongTy.resx">
       <DependentUpon>CongTy.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\HopDong.resx">
+      <DependentUpon>HopDong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\PhongBan.resx">
       <DependentUpon>PhongBan.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemHopDong.resx">
+      <DependentUpon>ThemHopDong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>

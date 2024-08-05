@@ -75,38 +75,6 @@ namespace NguyenThongHoangAnh.Screens
             ThemNhanVien them = new ThemNhanVien();
             them.themEvent += Them_themEvent;
             them.ShowDialog();
-            //int MaDT = int.Parse(cb_danToc.SelectedValue.ToString());
-            //int MaTG = int.Parse(cb_tonGiao.SelectedValue.ToString());
-            //int MaTD = int.Parse(cb_trinhDo.SelectedValue.ToString());
-            //int MaPB = int.Parse(cb_phongBan.SelectedValue.ToString());
-            //int MaCV = int.Parse(cb_chucVu.SelectedValue.ToString());
-            //int MaCTY = int.Parse(cb_congTy.SelectedValue.ToString());
-            //string HoTen = txt_ten.Text;            
-            //if (rbtn_Nam.Checked)
-            //{
-            //    GioiTinh = 1;
-            //} else if (rbtn_Nu.Checked) {
-            //    GioiTinh = 0;
-            //}
-            //DateTime NgaySinh = dateTimePicker1.Value.Date;
-            //string DiaChi = txt_diaChi.Text;
-            //string CCCD = txt_cccd.Text;
-            //string QueQuan = txt_queQuan.Text;
-            //string NoiOHienTai = txt_noiO.Text;
-            //string DienThoai = txt_dienThoai.Text;
-            //byte[] HinhAnh = GetImage();
-
-            //bool result = staffController.AddStaff(MaDT, MaTG, MaTD, MaPB, MaCV, MaCTY, HoTen, GioiTinh, NgaySinh, DiaChi, CCCD, QueQuan, NoiOHienTai, DienThoai, HinhAnh);
-
-            //if (result)
-            //{
-            //    LoadData();
-            //    MessageBox.Show("Thêm thành công!", "Thông báo");
-            //}
-            //else
-            //{
-            //    MessageBox.Show("Thêm không thành công!", "Lỗi");
-            //}
         }
 
         private void Them_themEvent(int MaDT, int MaTG, int MaTD, int MaPB, int MaCV, int MaCTY, string HoTen, int GioiTinh, DateTime NgaySinh, string DiaChi, string CCCD, string QueQuan, string NoiOHienTai, string DienThoai, byte[] HinhAnh)
@@ -181,7 +149,6 @@ namespace NguyenThongHoangAnh.Screens
 
         private void dataGridView1_CellEnter(object sender, DataGridViewCellEventArgs e)
         {
-
             _ = new DataGridViewRow();
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
             txt_MaNV.Text = Convert.ToString(row.Cells["MaNV"].Value);

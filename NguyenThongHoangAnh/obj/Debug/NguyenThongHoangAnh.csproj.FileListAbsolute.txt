@@ -79,3 +79,5 @@ D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.csp
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.exe
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.pdb
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemNhanVien.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.HopDong.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemHopDong.resources
