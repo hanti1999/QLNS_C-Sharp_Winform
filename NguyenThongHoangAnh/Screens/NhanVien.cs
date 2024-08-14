@@ -20,7 +20,6 @@ namespace NguyenThongHoangAnh.Screens
     {
         NhanVienController staffController = new NhanVienController();
         private int GioiTinh;
-        private DateTime ngaySinh;
         public NhanVien()
         {
             InitializeComponent();
