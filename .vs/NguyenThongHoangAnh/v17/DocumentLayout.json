@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\IT\\QLNS_C-Sharp_Winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\themhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\themhopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -18,32 +14,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 316,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "HopDong.cs",
               "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs",
               "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\HopDong.cs",
               "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs",
               "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\HopDong.cs",
-              "ViewState": "AQIAAB8AAAAAAAAAAAAIwCgAAAAoAAAA",
+              "ViewState": "AQIAABsAAAAAAAAAAAAmwEcAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-08-12T13:03:42.625Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ThemHopDong.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\ThemHopDong.cs",
-              "ViewState": "AQIAAG0AAAAAAAAAAAAuwHoAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-07T11:41:43.087Z",
               "EditorCaption": ""
             }
           ]
@@ -55,10 +38,6 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
             }
           ]
         }

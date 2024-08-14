@@ -30,6 +30,7 @@
         {
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_NgayKy = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_cancel = new System.Windows.Forms.Button();
             this.btn_submit = new System.Windows.Forms.Button();
@@ -69,7 +70,6 @@
             this.cbb_fontFamily = new System.Windows.Forms.ComboBox();
             this.rtxt_content = new System.Windows.Forms.RichTextBox();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txt_NgayKy = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -111,6 +111,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1240, 137);
             this.panel1.TabIndex = 1;
+            // 
+            // txt_NgayKy
+            // 
+            this.txt_NgayKy.Location = new System.Drawing.Point(131, 32);
+            this.txt_NgayKy.Name = "txt_NgayKy";
+            this.txt_NgayKy.Size = new System.Drawing.Size(170, 31);
+            this.txt_NgayKy.TabIndex = 17;
             // 
             // groupBox1
             // 
@@ -166,8 +173,11 @@
             // 
             this.cbb_ThoiGian.FormattingEnabled = true;
             this.cbb_ThoiGian.Items.AddRange(new object[] {
-            "1",
-            "2"});
+            "1 năm",
+            "2 năm",
+            "3 năm",
+            "4 năm",
+            "5 năm"});
             this.cbb_ThoiGian.Location = new System.Drawing.Point(491, 32);
             this.cbb_ThoiGian.Name = "cbb_ThoiGian";
             this.cbb_ThoiGian.Size = new System.Drawing.Size(170, 30);
@@ -177,8 +187,11 @@
             // 
             this.cbb_LanKy.FormattingEnabled = true;
             this.cbb_LanKy.Items.AddRange(new object[] {
-            "1",
-            "2"});
+            "Lần 1",
+            "Lần 2",
+            "Lần 3",
+            "Lần 4",
+            "Lần 5"});
             this.cbb_LanKy.Location = new System.Drawing.Point(491, -2);
             this.cbb_LanKy.Name = "cbb_LanKy";
             this.cbb_LanKy.Size = new System.Drawing.Size(170, 30);
@@ -527,13 +540,6 @@
             this.panel2.Padding = new System.Windows.Forms.Padding(8);
             this.panel2.Size = new System.Drawing.Size(1240, 405);
             this.panel2.TabIndex = 5;
-            // 
-            // txt_NgayKy
-            // 
-            this.txt_NgayKy.Location = new System.Drawing.Point(131, 32);
-            this.txt_NgayKy.Name = "txt_NgayKy";
-            this.txt_NgayKy.Size = new System.Drawing.Size(170, 31);
-            this.txt_NgayKy.TabIndex = 17;
             // 
             // ThemHopDong
             // 

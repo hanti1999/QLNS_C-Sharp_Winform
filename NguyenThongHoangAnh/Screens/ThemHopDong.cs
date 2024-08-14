@@ -86,22 +86,6 @@ namespace NguyenThongHoangAnh.Screens
         {
             rtxt.SelectionAlignment = HorizontalAlignment.Right;
         }
-
-        string GetContent()
-        {
-            XmlDocument doc = new XmlDocument();
-            XmlElement root = doc.CreateElement("div");
-
-            foreach (string line in rtxt_content.Lines)
-            {
-                XmlElement paragraph = doc.CreateElement("p");
-                paragraph.InnerText = line;
-                root.AppendChild(paragraph);
-                doc.AppendChild(root);
-            }
-
-            return doc.OuterXml;
-        }
         #endregion
 
         #region Event
@@ -130,7 +114,7 @@ namespace NguyenThongHoangAnh.Screens
             int LanKy = int.Parse(cbb_LanKy.Text);
             double HeSoLuong = double.Parse(cbb_heSoLuong.Text);
             string ThoiGian = cbb_ThoiGian.Text;
-            string NoiDung = GetContent();
+            string NoiDung = rtxt_content.Rtf;
             int MaNV =  int.Parse(cbb_nv.SelectedValue.ToString());
             ThemEvent(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, HeSoLuong, ThoiGian, NoiDung, MaNV);
         }

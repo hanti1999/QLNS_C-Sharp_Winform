@@ -11,6 +11,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Xml.Linq;
 
 namespace NguyenThongHoangAnh.Screens
 {
@@ -26,7 +27,10 @@ namespace NguyenThongHoangAnh.Screens
 
         void LoadForm()
         {
-            dataGridView1.DataSource = controller.GetHopDong();
+            bindingSource1.DataSource = controller.GetHopDong();
+            bindingNavigator1.BindingSource = bindingSource1;
+            dataGridView1.DataSource = bindingSource1;
+            rtxt_content.ReadOnly = true;
         }
 
         private void btn_them_Click(object sender, EventArgs e)
@@ -55,29 +59,16 @@ namespace NguyenThongHoangAnh.Screens
             rtxt_content.Clear();
             _ = new DataGridViewRow();
             DataGridViewRow row = dataGridView1.Rows[e.RowIndex];
-
-            XmlDocument doc = new XmlDocument();
-            doc.LoadXml(row.Cells[7].Value.ToString());
-
-            foreach (XmlNode node in doc.DocumentElement.ChildNodes)
-            {
-                string style = node.Attributes["style"]?.Value;
-
-                if (!string.IsNullOrEmpty(style))
-                {
-                    string[] styleParts = style.Split(';');
-                    foreach (string part in styleParts)
-                    {
-                        string[] kv = part.Split(':');
-                        if (kv[0].Trim().Equals("color", StringComparison.OrdinalIgnoreCase))
-                        {
-                            rtxt_content.ForeColor = System.Drawing.Color.FromName(kv[1].Trim());
-                        }
-                    }
-                }
-
-                rtxt_content.AppendText(node.InnerText + "\n");
-            }
+            // Đưa xml lên richtextbox
+            rtxt_content.Rtf = row.Cells["NoiDung"].Value.ToString();
+            txt_SoHD.Text = row.Cells["SoHD"].Value.ToString();
+            txt_NgayKy.Text = row.Cells["NgayKy"].Value.ToString();
+            dateTimePicker1.Text = row.Cells["NgayBatDau"].Value.ToString();
+            dateTimePicker2.Text = row.Cells["NgayKetThuc"].Value.ToString();
+            cbb_LanKy.Text = row.Cells["LanKy"].Value.ToString();
+            cbb_ThoiGian.Text = row.Cells["ThoiGian"].Value.ToString();
+            cbb_heSoLuong.Text = row.Cells["HeSoLuong"].Value.ToString();
+            cbb_nv.Text = row.Cells["HoTen"].Value.ToString();
         }
     }
 }
