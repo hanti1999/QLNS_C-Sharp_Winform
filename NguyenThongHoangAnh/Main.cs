@@ -129,5 +129,23 @@ namespace NguyenThongHoangAnh
             HopDong hd = new HopDong();
             hd.Show();
         }
+
+        private void ts_KhenThuong_Click(object sender, EventArgs e)
+        {
+            KhenThuong khenThuong = new KhenThuong();
+            khenThuong.Show();
+        }
+
+        private void ts_kyLuat_Click(object sender, EventArgs e)
+        {
+            KyLuat kl = new KyLuat();
+            kl.Show();
+        }
+
+        private void ts_luanCHuyen_Click(object sender, EventArgs e)
+        {
+            LuanChuyen lc = new LuanChuyen();
+            lc.Show();
+        }
     }
 }

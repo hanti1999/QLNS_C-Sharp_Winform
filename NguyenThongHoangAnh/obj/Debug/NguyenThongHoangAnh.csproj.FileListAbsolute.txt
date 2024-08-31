@@ -81,3 +81,9 @@ D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.pdb
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemNhanVien.resources
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.HopDong.resources
 D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemHopDong.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.KhenThuong.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemKhenThuong.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.KyLuat.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemKyLuat.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.LuanChuyen.resources
+D:\IT\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemLuanChuyen.resources

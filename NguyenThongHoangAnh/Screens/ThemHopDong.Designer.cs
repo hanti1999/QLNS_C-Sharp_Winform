@@ -173,11 +173,11 @@
             // 
             this.cbb_ThoiGian.FormattingEnabled = true;
             this.cbb_ThoiGian.Items.AddRange(new object[] {
-            "1 năm",
-            "2 năm",
-            "3 năm",
-            "4 năm",
-            "5 năm"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5"});
             this.cbb_ThoiGian.Location = new System.Drawing.Point(491, 32);
             this.cbb_ThoiGian.Name = "cbb_ThoiGian";
             this.cbb_ThoiGian.Size = new System.Drawing.Size(170, 30);
@@ -187,11 +187,12 @@
             // 
             this.cbb_LanKy.FormattingEnabled = true;
             this.cbb_LanKy.Items.AddRange(new object[] {
-            "Lần 1",
-            "Lần 2",
-            "Lần 3",
-            "Lần 4",
-            "Lần 5"});
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6"});
             this.cbb_LanKy.Location = new System.Drawing.Point(491, -2);
             this.cbb_LanKy.Name = "cbb_LanKy";
             this.cbb_LanKy.Size = new System.Drawing.Size(170, 30);

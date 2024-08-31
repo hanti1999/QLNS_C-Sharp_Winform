@@ -53,6 +53,9 @@
     <Compile Include="Controllers\AuthController.cs" />
     <Compile Include="Controllers\CongTyController.cs" />
     <Compile Include="Controllers\HopDongController.cs" />
+    <Compile Include="Controllers\KhenThuongController.cs" />
+    <Compile Include="Controllers\KyLuatController.cs" />
+    <Compile Include="Controllers\LuanChuyenController.cs" />
     <Compile Include="Controllers\PhongBanController.cs" />
     <Compile Include="Controllers\DanTocController.cs" />
     <Compile Include="Controllers\TrinhDoController.cs" />
@@ -71,6 +74,24 @@
     <Compile Include="Screens\HopDong.Designer.cs">
       <DependentUpon>HopDong.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\KhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\KhenThuong.Designer.cs">
+      <DependentUpon>KhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\KyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\KyLuat.Designer.cs">
+      <DependentUpon>KyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LuanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LuanChuyen.Designer.cs">
+      <DependentUpon>LuanChuyen.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\PhongBan.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -88,6 +109,24 @@
     </Compile>
     <Compile Include="Screens\ThemHopDong.Designer.cs">
       <DependentUpon>ThemHopDong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemKhenThuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemKhenThuong.Designer.cs">
+      <DependentUpon>ThemKhenThuong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemKyLuat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemKyLuat.Designer.cs">
+      <DependentUpon>ThemKyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemLuanChuyen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemLuanChuyen.Designer.cs">
+      <DependentUpon>ThemLuanChuyen.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\ThemNhanVien.cs">
       <SubType>Form</SubType>
@@ -171,6 +210,15 @@
     <EmbeddedResource Include="Screens\HopDong.resx">
       <DependentUpon>HopDong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\KhenThuong.resx">
+      <DependentUpon>KhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\KyLuat.resx">
+      <DependentUpon>KyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LuanChuyen.resx">
+      <DependentUpon>LuanChuyen.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\PhongBan.resx">
       <DependentUpon>PhongBan.cs</DependentUpon>
     </EmbeddedResource>
@@ -179,6 +227,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemHopDong.resx">
       <DependentUpon>ThemHopDong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemKhenThuong.resx">
+      <DependentUpon>ThemKhenThuong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemKyLuat.resx">
+      <DependentUpon>ThemKyLuat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemLuanChuyen.resx">
+      <DependentUpon>ThemLuanChuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>

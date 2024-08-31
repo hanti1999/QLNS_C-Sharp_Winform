@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\IT\\QLNS_C-Sharp_Winform\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\hopdong.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\controllers\\luanchuyencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\controllers\\luanchuyencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\controllers\\kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\controllers\\kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\kyluat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\kyluat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 316,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "HopDong.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\HopDong.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\HopDong.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\HopDong.cs",
-              "ViewState": "AQIAABsAAAAAAAAAAAAmwEcAAAAJAAAA",
+              "DocumentIndex": 3,
+              "Title": "KyLuat.cs",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\KyLuat.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\KyLuat.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\KyLuat.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\KyLuat.cs",
+              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-12T13:03:42.625Z",
+              "WhenOpened": "2024-08-28T13:31:06.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "KyLuatController.cs",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
+              "ViewState": "AQIAABwAAAAAAAAAAAAywAgAAAAbAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:22:47.145Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "LuanChuyenController.cs",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
+              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBoAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:22:46.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LuanChuyen.cs",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAYwCcAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-28T13:15:40.475Z",
               "EditorCaption": ""
             }
           ]
