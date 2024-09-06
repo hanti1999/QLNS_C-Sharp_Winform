@@ -21,7 +21,7 @@ namespace NguyenThongHoangAnh.Screens
             btn_them.Click += Btn_them_Click;
         }
 
-        public delegate void them(int SoQD, DateTime NgayQD, int MaNV, int PBCu, int PBMoi, string LyDo, string GhiChu);
+        public delegate void them(int SoQD, DateTime NgayQD, int PBCu, int PBMoi, string LyDo, string GhiChu, int MaNV);
         public event them themEvent;
 
         private void Btn_them_Click(object sender, EventArgs e)
@@ -29,11 +29,11 @@ namespace NguyenThongHoangAnh.Screens
             int SoQD = int.Parse(txt_soQD.Text);
             DateTime NgayQD = dateTimePicker1.Value.Date;
             int MaNV = int.Parse(cbb_nhanVien.SelectedValue.ToString());
-            int PBCu = int.Parse(txt_PBCu.Text);
+            int PBCu = int.Parse(controller.GetOldPB(MaNV));
             int PBMoi = int.Parse(cbb_PBMoi.SelectedValue.ToString());
             string LyDo = rtxt_lyDo.Text;
             string GhiChu = rtxt_ghiChu.Text;
-            themEvent(SoQD, NgayQD, MaNV, PBCu, PBMoi, LyDo, GhiChu);
+            themEvent(SoQD, NgayQD, PBCu, PBMoi, LyDo, GhiChu, MaNV);
             this.Close();
         }        
 

@@ -53,7 +53,7 @@ namespace NguyenThongHoangAnh.Controllers
             try
             {
                 conn.Open();
-                string query = "INSERT INTO kyLuat(SoQD, NgayQD, NgayKetThuc, LyDo, NoiDung, MaNV) " +
+                string query = "INSERT INTO kyLuat " +
                     "VALUES (@SoQD, @NgayQD, @NgayKetThuc, @LyDo, @NoiDung, @MaNV)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@SoQD", SoQD);

@@ -142,9 +142,10 @@ CREATE TABLE KyLuat (
 CREATE TABLE LuanChuyen (
 	SoQD INT PRIMARY KEY,
 	NgayQD DATE,
-	MaNV INT REFERENCES NhanVien(MaNV) ON UPDATE CASCADE ON DELETE CASCADE,
-	PBCu INT,
-	PBMoi INT,
+	MaNV INT REFERENCES NhanVien(MaNV) 
+	ON UPDATE CASCADE ON DELETE CASCADE,
+	PBCu INT REFERENCES PhongBan(MaPB),
+	PBMoi INT REFERENCES PhongBan(MaPB),
 	LyDo NVARCHAR(100),
 	GhiChu NVARCHAR(100)
 )
@@ -152,6 +153,14 @@ CREATE TABLE LuanChuyen (
 CREATE TABLE ThoiViec (
 	SoQD INT PRIMARY KEY,
 )
+
+-- Test
+SELECT lc.SoQD, lc.NgayQD, nv.HoTen, pbCu.TenPB AS PBCu, pbMoi.TenPB AS PBMoi
+FROM LuanChuyen lc 
+JOIN NhanVien nv ON lc.MaNV = nv.MaNV
+JOIN PhongBan pbCu ON lc.PBCu = pbCu.MaPB
+JOIN PhongBan pbMoi ON lc.PBMoi = pbMoi.MaPB;
+
 
 INSERT INTO TaiKhoan
 VALUES ('admin', 'admin')

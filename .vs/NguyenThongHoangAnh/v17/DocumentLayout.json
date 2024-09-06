@@ -7,16 +7,12 @@
       "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\controllers\\luanchuyencontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\controllers\\kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\controllers\\kyluatcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|D:\\IT\\QLNS_C-Sharp_Winform\\nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\luanchuyen.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|d:\\it\\qlns_c-sharp_winform\\nguyenthonghoanganh\\screens\\kyluat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4F6B0AA1-B801-448F-83DD-8A69C6A4F668}|NguyenThongHoangAnh\\NguyenThongHoangAnh.csproj|solutionrelative:nguyenthonghoanganh\\screens\\kyluat.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -25,33 +21,32 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedHeight": 316,
+          "DockedHeight": 313,
           "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "KyLuat.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\KyLuat.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\KyLuat.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\KyLuat.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\KyLuat.cs",
-              "ViewState": "AQIAACoAAAAAAAAAAAAowAAAAAAAAAAA",
+              "DocumentIndex": 1,
+              "Title": "LuanChuyen.cs [Design]",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs [Design]",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:31:06.915Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-04T13:30:49.785Z",
+              "EditorCaption": " [Design]"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "KyLuatController.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Controllers\\KyLuatController.cs",
-              "ViewState": "AQIAABwAAAAAAAAAAAAywAgAAAAbAAAA",
+              "DocumentIndex": 2,
+              "Title": "LuanChuyen.cs",
+              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
+              "ViewState": "AQIAADEAAAAAAAAAAAASwD8AAABBAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:22:47.145Z",
+              "WhenOpened": "2024-09-04T13:09:59.13Z",
               "EditorCaption": ""
             },
             {
@@ -62,28 +57,15 @@
               "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
               "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
               "RelativeToolTip": "NguyenThongHoangAnh\\Controllers\\LuanChuyenController.cs",
-              "ViewState": "AQIAAA8AAAAAAAAAAAAwwBoAAAAoAAAA",
+              "ViewState": "AQIAADoAAAAAAAAAAAAIwEUAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:22:46.078Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LuanChuyen.cs",
-              "DocumentMoniker": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
-              "RelativeDocumentMoniker": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
-              "ToolTip": "D:\\IT\\QLNS_C-Sharp_Winform\\NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
-              "RelativeToolTip": "NguyenThongHoangAnh\\Screens\\LuanChuyen.cs",
-              "ViewState": "AQIAAA4AAAAAAAAAAAAYwCcAAAAJAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-28T13:15:40.475Z",
+              "WhenOpened": "2024-09-04T12:23:28.175Z",
               "EditorCaption": ""
             }
           ]
         },
         {
-          "DockedHeight": 64,
+          "DockedHeight": 67,
           "SelectedChildIndex": -1,
           "Children": [
             {

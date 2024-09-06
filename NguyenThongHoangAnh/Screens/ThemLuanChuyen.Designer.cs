@@ -38,8 +38,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.txt_PBCu = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_soQD = new System.Windows.Forms.TextBox();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -116,7 +114,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(3, 83);
+            this.label5.Location = new System.Drawing.Point(3, 49);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(90, 22);
             this.label5.TabIndex = 9;
@@ -125,7 +123,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(132, 75);
+            this.dateTimePicker1.Location = new System.Drawing.Point(132, 41);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
             this.dateTimePicker1.TabIndex = 8;
@@ -135,30 +133,14 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(405, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(133, 22);
+            this.label4.Size = new System.Drawing.Size(107, 22);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Phòng ban mới:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(404, 11);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(120, 22);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "Phòng ban cũ:";
-            // 
-            // txt_PBCu
-            // 
-            this.txt_PBCu.Location = new System.Drawing.Point(544, 3);
-            this.txt_PBCu.Name = "txt_PBCu";
-            this.txt_PBCu.Size = new System.Drawing.Size(200, 30);
-            this.txt_PBCu.TabIndex = 4;
+            this.label4.Text = "Chuyển đến:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 47);
+            this.label2.Location = new System.Drawing.Point(405, 11);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(96, 22);
             this.label2.TabIndex = 2;
@@ -179,8 +161,6 @@
             this.panel2.Controls.Add(this.label5);
             this.panel2.Controls.Add(this.dateTimePicker1);
             this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.txt_PBCu);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txt_soQD);
             this.panel2.Controls.Add(this.label1);
@@ -192,7 +172,7 @@
             // cbb_nhanVien
             // 
             this.cbb_nhanVien.FormattingEnabled = true;
-            this.cbb_nhanVien.Location = new System.Drawing.Point(132, 39);
+            this.cbb_nhanVien.Location = new System.Drawing.Point(544, 3);
             this.cbb_nhanVien.Name = "cbb_nhanVien";
             this.cbb_nhanVien.Size = new System.Drawing.Size(200, 30);
             this.cbb_nhanVien.TabIndex = 13;
@@ -222,7 +202,7 @@
             this.ClientSize = new System.Drawing.Size(882, 553);
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ThemLuanChuyen";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ThemLuanChuyen";
@@ -247,8 +227,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox txt_PBCu;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_soQD;
         private System.Windows.Forms.Panel panel2;
