@@ -152,15 +152,15 @@ CREATE TABLE LuanChuyen (
 
 CREATE TABLE ThoiViec (
 	SoQD INT PRIMARY KEY,
+	NgayNopDon DATE,
+	NgayNghi DATE,
+	MaNV INT REFERENCES NhanVien(MaNV)
+	ON UPDATE CASCADE ON DELETE CASCADE,
+	LyDo NVARCHAR(100),
+	GhiChu NVARCHAR(100)
 )
 
 -- Test
-SELECT lc.SoQD, lc.NgayQD, nv.HoTen, pbCu.TenPB AS PBCu, pbMoi.TenPB AS PBMoi
-FROM LuanChuyen lc 
-JOIN NhanVien nv ON lc.MaNV = nv.MaNV
-JOIN PhongBan pbCu ON lc.PBCu = pbCu.MaPB
-JOIN PhongBan pbMoi ON lc.PBMoi = pbMoi.MaPB;
-
 
 INSERT INTO TaiKhoan
 VALUES ('admin', 'admin')
@@ -172,13 +172,13 @@ INSERT INTO TonGiao (TenTG)
 VALUES (N'Không')
 
 INSERT INTO TrinhDo (TenTD)
-VALUES ('12/12'), (N'Cao đẳng')
+VALUES ('12/12'), (N'Cao đẳng'), (N'Đại học')
 
 INSERT INTO PhongBan (TenPB)
-VALUES ('IT')
+VALUES ('IT'), (N'Quản lý'), (N'Nhân sự')
 
 INSERT INTO ChucVu(TenCV)
-VALUES (N'Nhân viên')
+VALUES (N'Nhân viên'), (N'Trưởng phòng')
 
 SELECT NV.MaNV, DT.TenDT, TG.TenTG, TD.TenTD, PB.TenPB, CV.TenCV, CTY.TenCTY, NV.HoTen, NV.GioiTinh, NV.NgaySinh, NV.DiaChi, NV.CCCD, NV.QueQuan, NV.NoiOHienTai, NV.DienThoai, NV.HinhAnh  
 FROM NhanVien NV
@@ -188,6 +188,12 @@ INNER JOIN TrinhDo TD ON NV.MaTD = TD.MaTD
 INNER JOIN PhongBan PB ON NV.MaPB = PB.MaPB 
 INNER JOIN ChucVu CV ON NV.MaCV = CV.MaCV 
 INNER JOIN CongTy CTY ON NV.MaCTY = CTY.MaCTY
+
+SELECT lc.SoQD, lc.NgayQD, nv.MaNV, nv.HoTen, pbCu.TenPB AS PBCu, pbMoi.TenPB AS PBMoi, lc.LyDo, lc.GhiChu
+FROM LuanChuyen lc
+JOIN NhanVien nv ON lc.MaNV = nv.MaNV
+JOIN PhongBan pbCu ON lc.PBCu = pbCu.MaPB
+JOIN PhongBan pbMoi ON lc.PBMoi = pbMoi.MaPB
 
 SELECT KT.SoQD, NV.HoTen, KT.NgayQD, KT.LyDo, KT.NoiDung FROM KhenThuong KT INNER JOIN NhanVien NV ON NV.MaNV = KT.MaNV
 

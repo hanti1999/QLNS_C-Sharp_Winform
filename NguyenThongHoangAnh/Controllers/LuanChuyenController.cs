@@ -58,6 +58,21 @@ namespace NguyenThongHoangAnh.Controllers
             finally { conn.Close(); }
         }
 
+        public bool UpdateNV (int MaPB, int MaNV)
+        {
+            try
+            {
+                conn.Open();
+                string query = "UPDATE NhanVien SET MaPB=@MaPB WHERE MaNV=@MaNV";
+                SqlCommand cmd = new SqlCommand(query, conn);
+                cmd.Parameters.AddWithValue("@MaPB", MaPB);
+                cmd.Parameters.AddWithValue("@MaNV", MaNV);
+                return checkResult.CheckExecuteNonQuery(cmd);
+            }
+            catch { return false; }
+            finally { conn.Close(); }
+        }
+
         public DataTable GetData()
         {
             try
@@ -75,7 +90,7 @@ namespace NguyenThongHoangAnh.Controllers
             finally { conn.Close(); }
         }
 
-        public bool DeleteData(string id)
+        public bool DeleteData(int id)
         {
             try
             {
@@ -89,18 +104,17 @@ namespace NguyenThongHoangAnh.Controllers
             finally { conn.Close(); }
         }
 
-        public bool EditData(int SoQD, DateTime NgayQD, int PBCu, int PBMoi, string LyDo, string GhiChu, int MaNV)
+        public bool EditData(int SoQD, DateTime NgayQD, int PBMoi, string LyDo, string GhiChu, int MaNV)
         {
             try
             {
                 conn.Open();
                 string query = "UPDATE LuanChuyen " +
-                    "SET NgayQD=@NgayQD, PBCu=@PBCu, PBMoi=@PBMoi, LyDo=@LyDo, GhiChu=@GhiChu, MaNV=@MaNV " +
+                    "SET NgayQD=@NgayQD,PBMoi=@PBMoi, LyDo=@LyDo, GhiChu=@GhiChu, MaNV=@MaNV " +
                     "WHERE SoQD=@SoQD";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@SoQD", SoQD);
                 cmd.Parameters.AddWithValue("@NgayQD", NgayQD);
-                cmd.Parameters.AddWithValue("@PBCu", PBCu);
                 cmd.Parameters.AddWithValue("@PBMoi", PBMoi);
                 cmd.Parameters.AddWithValue("@LyDo", LyDo);
                 cmd.Parameters.AddWithValue("@GhiChu", GhiChu);

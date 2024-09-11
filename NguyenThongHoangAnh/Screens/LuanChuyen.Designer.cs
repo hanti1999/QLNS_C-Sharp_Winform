@@ -33,6 +33,14 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.SoQD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NgayQD = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PBCu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PBMoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LyDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel3 = new System.Windows.Forms.Panel();
             this.rtxt_ghiChu = new System.Windows.Forms.RichTextBox();
             this.rtxt_lyDo = new System.Windows.Forms.RichTextBox();
@@ -61,14 +69,8 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.SoQD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NgayQD = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaNV = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PBCu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PBMoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LyDo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.GhiChu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cbb_PBCu = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -122,6 +124,78 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
+            // SoQD
+            // 
+            this.SoQD.DataPropertyName = "SoQD";
+            this.SoQD.HeaderText = "Số quyết định";
+            this.SoQD.MinimumWidth = 6;
+            this.SoQD.Name = "SoQD";
+            this.SoQD.ReadOnly = true;
+            this.SoQD.Width = 117;
+            // 
+            // NgayQD
+            // 
+            this.NgayQD.DataPropertyName = "NgayQD";
+            this.NgayQD.HeaderText = "Ngày QD";
+            this.NgayQD.MinimumWidth = 6;
+            this.NgayQD.Name = "NgayQD";
+            this.NgayQD.ReadOnly = true;
+            this.NgayQD.Width = 94;
+            // 
+            // MaNV
+            // 
+            this.MaNV.DataPropertyName = "MaNV";
+            this.MaNV.HeaderText = "Mã NV";
+            this.MaNV.MinimumWidth = 6;
+            this.MaNV.Name = "MaNV";
+            this.MaNV.ReadOnly = true;
+            this.MaNV.Width = 82;
+            // 
+            // HoTen
+            // 
+            this.HoTen.DataPropertyName = "HoTen";
+            this.HoTen.HeaderText = "Họ tên";
+            this.HoTen.MinimumWidth = 6;
+            this.HoTen.Name = "HoTen";
+            this.HoTen.ReadOnly = true;
+            this.HoTen.Width = 75;
+            // 
+            // PBCu
+            // 
+            this.PBCu.DataPropertyName = "PBCu";
+            this.PBCu.HeaderText = "PB cũ";
+            this.PBCu.MinimumWidth = 6;
+            this.PBCu.Name = "PBCu";
+            this.PBCu.ReadOnly = true;
+            this.PBCu.Width = 71;
+            // 
+            // PBMoi
+            // 
+            this.PBMoi.DataPropertyName = "PBMoi";
+            this.PBMoi.HeaderText = "PB mới";
+            this.PBMoi.MinimumWidth = 6;
+            this.PBMoi.Name = "PBMoi";
+            this.PBMoi.ReadOnly = true;
+            this.PBMoi.Width = 79;
+            // 
+            // LyDo
+            // 
+            this.LyDo.DataPropertyName = "LyDo";
+            this.LyDo.HeaderText = "Lý do";
+            this.LyDo.MinimumWidth = 6;
+            this.LyDo.Name = "LyDo";
+            this.LyDo.ReadOnly = true;
+            this.LyDo.Width = 70;
+            // 
+            // GhiChu
+            // 
+            this.GhiChu.DataPropertyName = "GhiChu";
+            this.GhiChu.HeaderText = "Ghi chú";
+            this.GhiChu.MinimumWidth = 6;
+            this.GhiChu.Name = "GhiChu";
+            this.GhiChu.ReadOnly = true;
+            this.GhiChu.Width = 80;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.rtxt_ghiChu);
@@ -154,7 +228,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(3, 211);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(78, 22);
+            this.label7.Size = new System.Drawing.Size(58, 19);
             this.label7.TabIndex = 11;
             this.label7.Text = "Ghi chú:";
             // 
@@ -163,12 +237,14 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(3, 10);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(62, 22);
+            this.label6.Size = new System.Drawing.Size(48, 19);
             this.label6.TabIndex = 10;
             this.label6.Text = "Lý do:";
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.cbb_PBCu);
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.cbb_PBMoi);
             this.panel2.Controls.Add(this.cbb_nhanVien);
             this.panel2.Controls.Add(this.btn_xoa);
@@ -190,7 +266,7 @@
             this.cbb_PBMoi.FormattingEnabled = true;
             this.cbb_PBMoi.Location = new System.Drawing.Point(544, 39);
             this.cbb_PBMoi.Name = "cbb_PBMoi";
-            this.cbb_PBMoi.Size = new System.Drawing.Size(200, 30);
+            this.cbb_PBMoi.Size = new System.Drawing.Size(200, 27);
             this.cbb_PBMoi.TabIndex = 14;
             // 
             // cbb_nhanVien
@@ -198,7 +274,7 @@
             this.cbb_nhanVien.FormattingEnabled = true;
             this.cbb_nhanVien.Location = new System.Drawing.Point(544, 3);
             this.cbb_nhanVien.Name = "cbb_nhanVien";
-            this.cbb_nhanVien.Size = new System.Drawing.Size(200, 30);
+            this.cbb_nhanVien.Size = new System.Drawing.Size(200, 27);
             this.cbb_nhanVien.TabIndex = 13;
             // 
             // btn_xoa
@@ -209,6 +285,7 @@
             this.btn_xoa.TabIndex = 12;
             this.btn_xoa.Text = "Xóa";
             this.btn_xoa.UseVisualStyleBackColor = true;
+            this.btn_xoa.Click += new System.EventHandler(this.btn_xoa_Click);
             // 
             // btn_sua
             // 
@@ -218,6 +295,7 @@
             this.btn_sua.TabIndex = 11;
             this.btn_sua.Text = "Sửa";
             this.btn_sua.UseVisualStyleBackColor = true;
+            this.btn_sua.Click += new System.EventHandler(this.btn_sua_Click);
             // 
             // btn_them
             // 
@@ -234,7 +312,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(3, 49);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(90, 22);
+            this.label5.Size = new System.Drawing.Size(72, 19);
             this.label5.TabIndex = 9;
             this.label5.Text = "Ngày QD:";
             // 
@@ -243,7 +321,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(132, 41);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 30);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 26);
             this.dateTimePicker1.TabIndex = 8;
             // 
             // label4
@@ -251,16 +329,16 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(405, 47);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(107, 22);
+            this.label4.Size = new System.Drawing.Size(102, 19);
             this.label4.TabIndex = 7;
-            this.label4.Text = "Chuyển đến:";
+            this.label4.Text = "Đã chuyển đến:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(405, 11);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(96, 22);
+            this.label2.Size = new System.Drawing.Size(73, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nhân viên:";
             // 
@@ -268,7 +346,7 @@
             // 
             this.txt_soQD.Location = new System.Drawing.Point(132, 3);
             this.txt_soQD.Name = "txt_soQD";
-            this.txt_soQD.Size = new System.Drawing.Size(200, 30);
+            this.txt_soQD.Size = new System.Drawing.Size(200, 26);
             this.txt_soQD.TabIndex = 1;
             // 
             // label1
@@ -276,7 +354,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 11);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 22);
+            this.label1.Size = new System.Drawing.Size(95, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số quyết định:";
             // 
@@ -310,7 +388,7 @@
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -320,7 +398,7 @@
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -329,7 +407,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -358,7 +436,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -367,7 +445,7 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -375,81 +453,26 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // SoQD
+            // cbb_PBCu
             // 
-            this.SoQD.DataPropertyName = "SoQD";
-            this.SoQD.HeaderText = "Số quyết định";
-            this.SoQD.MinimumWidth = 6;
-            this.SoQD.Name = "SoQD";
-            this.SoQD.ReadOnly = true;
-            this.SoQD.Width = 146;
+            this.cbb_PBCu.FormattingEnabled = true;
+            this.cbb_PBCu.Location = new System.Drawing.Point(132, 78);
+            this.cbb_PBCu.Name = "cbb_PBCu";
+            this.cbb_PBCu.Size = new System.Drawing.Size(200, 27);
+            this.cbb_PBCu.TabIndex = 16;
             // 
-            // NgayQD
+            // label3
             // 
-            this.NgayQD.DataPropertyName = "NgayQD";
-            this.NgayQD.HeaderText = "Ngày quyết định";
-            this.NgayQD.MinimumWidth = 6;
-            this.NgayQD.Name = "NgayQD";
-            this.NgayQD.ReadOnly = true;
-            this.NgayQD.Width = 121;
-            // 
-            // MaNV
-            // 
-            this.MaNV.DataPropertyName = "MaNV";
-            this.MaNV.HeaderText = "Mã nhân viên";
-            this.MaNV.MinimumWidth = 6;
-            this.MaNV.Name = "MaNV";
-            this.MaNV.ReadOnly = true;
-            this.MaNV.Width = 133;
-            // 
-            // HoTen
-            // 
-            this.HoTen.DataPropertyName = "HoTen";
-            this.HoTen.HeaderText = "Họ tên";
-            this.HoTen.MinimumWidth = 6;
-            this.HoTen.Name = "HoTen";
-            this.HoTen.ReadOnly = true;
-            this.HoTen.Width = 64;
-            // 
-            // PBCu
-            // 
-            this.PBCu.DataPropertyName = "PBCu";
-            this.PBCu.HeaderText = "Phòng ban cũ";
-            this.PBCu.MinimumWidth = 6;
-            this.PBCu.Name = "PBCu";
-            this.PBCu.ReadOnly = true;
-            this.PBCu.Width = 115;
-            // 
-            // PBMoi
-            // 
-            this.PBMoi.DataPropertyName = "PBMoi";
-            this.PBMoi.HeaderText = "Phòng ban mới";
-            this.PBMoi.MinimumWidth = 6;
-            this.PBMoi.Name = "PBMoi";
-            this.PBMoi.ReadOnly = true;
-            this.PBMoi.Width = 115;
-            // 
-            // LyDo
-            // 
-            this.LyDo.DataPropertyName = "LyDo";
-            this.LyDo.HeaderText = "Lý do";
-            this.LyDo.MinimumWidth = 6;
-            this.LyDo.Name = "LyDo";
-            this.LyDo.ReadOnly = true;
-            this.LyDo.Width = 61;
-            // 
-            // GhiChu
-            // 
-            this.GhiChu.DataPropertyName = "GhiChu";
-            this.GhiChu.HeaderText = "Ghi chú";
-            this.GhiChu.MinimumWidth = 6;
-            this.GhiChu.Name = "GhiChu";
-            this.GhiChu.ReadOnly = true;
-            this.GhiChu.Width = 68;
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 19);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Phòng ban cũ:";
             // 
             // LuanChuyen
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(882, 711);
             this.Controls.Add(this.bindingNavigator1);
@@ -516,5 +539,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PBMoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn LyDo;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
+        private System.Windows.Forms.ComboBox cbb_PBCu;
+        private System.Windows.Forms.Label label3;
     }
 }
