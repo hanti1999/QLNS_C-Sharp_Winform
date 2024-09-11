@@ -30,7 +30,8 @@ namespace NguyenThongHoangAnh.Controllers
                     "INNER JOIN TrinhDo TD ON NV.MaTD = TD.MaTD " +
                     "INNER JOIN PhongBan PB ON NV.MaPB = PB.MaPB " +
                     "INNER JOIN ChucVu CV ON NV.MaCV = CV.MaCV " +
-                    "INNER JOIN CongTy CTY ON NV.MaCTY = CTY.MaCTY";
+                    "INNER JOIN CongTy CTY ON NV.MaCTY = CTY.MaCTY " +
+                    "WHERE NV.MaNV NOT IN (SELECT TV.MaNV FROM ThoiViec TV)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 return checkResult.CheckDataTable(cmd);
             }

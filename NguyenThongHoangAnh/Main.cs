@@ -147,5 +147,23 @@ namespace NguyenThongHoangAnh
             LuanChuyen lc = new LuanChuyen();
             lc.Show();
         }
+
+        private void ts_thoiviec_Click(object sender, EventArgs e)
+        {
+            ThoiViec tv = new ThoiViec();
+            tv.Show();
+        }
+
+        private void ts_LoaiCa_Click(object sender, EventArgs e)
+        {
+            LoaiCa lc = new LoaiCa();
+            lc.Show();
+        }
+
+        private void ts_LoaiCong_Click(object sender, EventArgs e)
+        {
+            LoaiCong lc = new LoaiCong();
+            lc.Show();
+        }
     }
 }

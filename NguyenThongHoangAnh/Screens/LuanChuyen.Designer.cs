@@ -47,6 +47,8 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.cbb_PBCu = new System.Windows.Forms.ComboBox();
+            this.label3 = new System.Windows.Forms.Label();
             this.cbb_PBMoi = new System.Windows.Forms.ComboBox();
             this.cbb_nhanVien = new System.Windows.Forms.ComboBox();
             this.btn_xoa = new System.Windows.Forms.Button();
@@ -69,8 +71,6 @@
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
-            this.cbb_PBCu = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -127,11 +127,11 @@
             // SoQD
             // 
             this.SoQD.DataPropertyName = "SoQD";
-            this.SoQD.HeaderText = "Số quyết định";
+            this.SoQD.HeaderText = "Số QD";
             this.SoQD.MinimumWidth = 6;
             this.SoQD.Name = "SoQD";
             this.SoQD.ReadOnly = true;
-            this.SoQD.Width = 117;
+            this.SoQD.Width = 78;
             // 
             // NgayQD
             // 
@@ -260,6 +260,23 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(852, 111);
             this.panel2.TabIndex = 1;
+            // 
+            // cbb_PBCu
+            // 
+            this.cbb_PBCu.FormattingEnabled = true;
+            this.cbb_PBCu.Location = new System.Drawing.Point(132, 78);
+            this.cbb_PBCu.Name = "cbb_PBCu";
+            this.cbb_PBCu.Size = new System.Drawing.Size(200, 27);
+            this.cbb_PBCu.TabIndex = 16;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 86);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(94, 19);
+            this.label3.TabIndex = 15;
+            this.label3.Text = "Phòng ban cũ:";
             // 
             // cbb_PBMoi
             // 
@@ -453,23 +470,6 @@
             this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
-            // cbb_PBCu
-            // 
-            this.cbb_PBCu.FormattingEnabled = true;
-            this.cbb_PBCu.Location = new System.Drawing.Point(132, 78);
-            this.cbb_PBCu.Name = "cbb_PBCu";
-            this.cbb_PBCu.Size = new System.Drawing.Size(200, 27);
-            this.cbb_PBCu.TabIndex = 16;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 86);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(94, 19);
-            this.label3.TabIndex = 15;
-            this.label3.Text = "Phòng ban cũ:";
-            // 
             // LuanChuyen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -531,6 +531,8 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.ComboBox cbb_PBCu;
+        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoQD;
         private System.Windows.Forms.DataGridViewTextBoxColumn NgayQD;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaNV;
@@ -539,7 +541,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn PBMoi;
         private System.Windows.Forms.DataGridViewTextBoxColumn LyDo;
         private System.Windows.Forms.DataGridViewTextBoxColumn GhiChu;
-        private System.Windows.Forms.ComboBox cbb_PBCu;
-        private System.Windows.Forms.Label label3;
     }
 }

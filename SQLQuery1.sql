@@ -160,6 +160,18 @@ CREATE TABLE ThoiViec (
 	GhiChu NVARCHAR(100)
 )
 
+CREATE TABLE LoaiCa (
+	MaLoaiCa INT IDENTITY(1,1) PRIMARY KEY,
+	TenLoaiCa NVARCHAR(100),
+	HeSo FLOAT
+)
+
+CREATE TABLE LoaiCong (
+	MaLoaiCong INT IDENTITY(1,1) PRIMARY KEY,
+	TenLoaiCong NVARCHAR(100),
+	HeSo FLOAT
+)
+
 -- Test
 
 INSERT INTO TaiKhoan
@@ -180,6 +192,15 @@ VALUES ('IT'), (N'Quản lý'), (N'Nhân sự')
 INSERT INTO ChucVu(TenCV)
 VALUES (N'Nhân viên'), (N'Trưởng phòng')
 
+INSERT INTO CongTy(TenCTY, DienThoai, Email, DiaChi)
+VALUES (N'CTY TNHH Hiền Phát Vi Na', '02513511610', 'gashienphat1979@gmail.com', N'Quốc lộ 51, An Phước, Long Thành, Đồng Nai')
+
+INSERT INTO LoaiCong (TenLoaiCong, HeSo)
+VALUES (N'Công ngày thường', 1), (N'Công ngày lễ', 1.5), (N'Công ngày tết tây', 1.5), (N'Công ngày tết nguyên đán', 2)
+
+INSERT INTO LoaiCa (TenLoaiCa, HeSo)
+VALUES (N'Ca đêm', 1.4), (N'Ca sáng', 1), (N'Ca chiều', 1)
+
 SELECT NV.MaNV, DT.TenDT, TG.TenTG, TD.TenTD, PB.TenPB, CV.TenCV, CTY.TenCTY, NV.HoTen, NV.GioiTinh, NV.NgaySinh, NV.DiaChi, NV.CCCD, NV.QueQuan, NV.NoiOHienTai, NV.DienThoai, NV.HinhAnh  
 FROM NhanVien NV
 INNER JOIN DanToc DT ON NV.MaDT = DT.MaDT
@@ -197,5 +218,4 @@ JOIN PhongBan pbMoi ON lc.PBMoi = pbMoi.MaPB
 
 SELECT KT.SoQD, NV.HoTen, KT.NgayQD, KT.LyDo, KT.NoiDung FROM KhenThuong KT INNER JOIN NhanVien NV ON NV.MaNV = KT.MaNV
 
-INSERT INTO CongTy(TenCTY, DienThoai, Email, DiaChi)
-VALUES (N'CTY TNHH Hiền Phát Vi Na', '02513511610', 'gashienphat1979@gmail.com', N'Quốc lộ 51, An Phước, Long Thành, Đồng Nai')
+SELECT tv.SoQD, tv.NgayNopDon, tv.NgayNghi, nv.MaNV, nv.HoTen, tv.LyDo, tv.GhiChu FROM ThoiViec tv JOIN NhanVien nv ON tv.MaNV = nv.MaNV

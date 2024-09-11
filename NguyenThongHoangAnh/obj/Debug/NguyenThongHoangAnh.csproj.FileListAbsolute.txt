@@ -118,3 +118,7 @@ F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.csproj.CoreCompileInputs.cache
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.exe
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.pdb
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemThoiViec.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThoiViec.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.LoaiCa.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.LoaiCong.resources

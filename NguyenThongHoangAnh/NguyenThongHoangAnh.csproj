@@ -55,9 +55,12 @@
     <Compile Include="Controllers\HopDongController.cs" />
     <Compile Include="Controllers\KhenThuongController.cs" />
     <Compile Include="Controllers\KyLuatController.cs" />
+    <Compile Include="Controllers\LoaiCaController.cs" />
+    <Compile Include="Controllers\LoaiCongController.cs" />
     <Compile Include="Controllers\LuanChuyenController.cs" />
     <Compile Include="Controllers\PhongBanController.cs" />
     <Compile Include="Controllers\DanTocController.cs" />
+    <Compile Include="Controllers\ThoiViecController.cs" />
     <Compile Include="Controllers\TrinhDoController.cs" />
     <Compile Include="Controllers\ChucVuController.cs" />
     <Compile Include="Controllers\TonGiaoController.cs" />
@@ -85,6 +88,18 @@
     </Compile>
     <Compile Include="Screens\KyLuat.Designer.cs">
       <DependentUpon>KyLuat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoaiCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LoaiCa.Designer.cs">
+      <DependentUpon>LoaiCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\LoaiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\LoaiCong.Designer.cs">
+      <DependentUpon>LoaiCong.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\LuanChuyen.cs">
       <SubType>Form</SubType>
@@ -133,6 +148,18 @@
     </Compile>
     <Compile Include="Screens\ThemNhanVien.Designer.cs">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemThoiViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemThoiViec.Designer.cs">
+      <DependentUpon>ThemThoiViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThoiViec.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThoiViec.Designer.cs">
+      <DependentUpon>ThoiViec.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\TrinhDo.cs">
       <SubType>Form</SubType>
@@ -216,6 +243,12 @@
     <EmbeddedResource Include="Screens\KyLuat.resx">
       <DependentUpon>KyLuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoaiCa.resx">
+      <DependentUpon>LoaiCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\LoaiCong.resx">
+      <DependentUpon>LoaiCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\LuanChuyen.resx">
       <DependentUpon>LuanChuyen.cs</DependentUpon>
     </EmbeddedResource>
@@ -239,6 +272,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemThoiViec.resx">
+      <DependentUpon>ThemThoiViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThoiViec.resx">
+      <DependentUpon>ThoiViec.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\TrinhDo.resx">
       <DependentUpon>TrinhDo.cs</DependentUpon>
