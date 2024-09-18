@@ -165,5 +165,17 @@ namespace NguyenThongHoangAnh
             LoaiCong lc = new LoaiCong();
             lc.Show();
         }
+
+        private void ts_PhuCap_Click(object sender, EventArgs e)
+        {
+            PhuCap pc = new PhuCap();
+            pc.Show();
+        }
+
+        private void ts_CTPC_Click(object sender, EventArgs e)
+        {
+            ChiTietNhanPhuCap form = new ChiTietNhanPhuCap();
+            form.Show();
+        }
     }
 }

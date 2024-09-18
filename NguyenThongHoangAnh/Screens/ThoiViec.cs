@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class ThoiViec : Form
     {
         ThoiViecController controller = new ThoiViecController();
+        FillCombobox fillCbb = new FillCombobox();
 
         public ThoiViec()
         {
@@ -38,7 +40,7 @@ namespace NguyenThongHoangAnh.Screens
 
         void FormLoad ()
         {
-            controller.FillCombobox("SELECT * FROM NhanVien", "MaNV", "HoTen", cbb_nhanVien);
+            fillCbb.FillCbb("SELECT * FROM NhanVien NV WHERE NV.MaNV NOT IN (SELECT TV.MaNV FROM ThoiViec TV)", "MaNV", "HoTen", cbb_nhanVien);
             txt_soQD.ReadOnly = true;
             bindingSource1.DataSource = controller.GetData();
             bindingNavigator1.BindingSource = bindingSource1;

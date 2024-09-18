@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class LoaiCong : Form
     {
         LoaiCongController controller = new LoaiCongController();
+        FillCombobox FillCbb = new FillCombobox();
         public LoaiCong()
         {
             InitializeComponent();
@@ -35,6 +37,7 @@ namespace NguyenThongHoangAnh.Screens
             bindingSource1.DataSource = controller.GetData();
             bindingNavigator1.BindingSource = bindingSource1;
             dataGridView1.DataSource = bindingSource1;
+            FillCbb.FillCbb("SELECT HeSo FROM LoaiCong", "HeSo", "HeSo", cbb_HeSo);
             txt_MaLoaiCong.ReadOnly = true;
         }
 
@@ -70,6 +73,28 @@ namespace NguyenThongHoangAnh.Screens
             else
             {
                 MessageBox.Show("Sửa không thành công!", "Lỗi");
+            }
+        }
+
+        private void btn_Them_Click(object sender, EventArgs e)
+        {
+            ThemLoaiCong them = new ThemLoaiCong();
+            them.themEvent += Them_themEvent;
+            them.Show();
+        }
+
+        private void Them_themEvent(string TenLoaiCong, float HeSo)
+        {
+            bool result = controller.AddData(TenLoaiCong, HeSo);
+
+            if (result)
+            {
+                LoadForm();
+                MessageBox.Show("Thêm thành công!", "Thông báo");
+            }
+            else
+            {
+                MessageBox.Show("Thêm không thành công!", "Lỗi");
             }
         }
     }

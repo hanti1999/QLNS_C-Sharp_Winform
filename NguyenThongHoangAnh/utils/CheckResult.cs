@@ -11,8 +11,6 @@ namespace NguyenThongHoangAnh.Controllers
 {
     internal class CheckResult
     {
-        SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connStr"].ConnectionString);
-
         public bool CheckExecuteNonQuery(SqlCommand cmd)
         {
             int result = cmd.ExecuteNonQuery();

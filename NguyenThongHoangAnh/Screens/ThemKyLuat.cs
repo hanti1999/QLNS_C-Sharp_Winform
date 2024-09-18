@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,7 @@ namespace NguyenThongHoangAnh.Screens
 {
     public partial class ThemKyLuat : Form
     {
-        KyLuatController controller = new KyLuatController();
+        FillCombobox FillCbb = new FillCombobox();
 
         public ThemKyLuat()
         {
@@ -26,7 +27,7 @@ namespace NguyenThongHoangAnh.Screens
 
         void FormLoad()
         {
-            controller.FillCombobox("SELECT * FROM NhanVien", "MaNV", "HoTen", cbb_NV);
+            FillCbb.FillCbb("SELECT * FROM NhanVien NV WHERE NV.MaNV NOT IN (SELECT TV.MaNV FROM ThoiViec TV)", "MaNV", "HoTen", cbb_NV);
         }
 
         private void btn_them_Click(object sender, EventArgs e)

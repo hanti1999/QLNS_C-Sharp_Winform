@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Drawing;
 using System.IO;
@@ -11,7 +12,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class ThemHopDong : Form
     {
         private bool isNew = false;
-        HopDongController controller = new HopDongController();
+        FillNhanVien FillCbb = new FillNhanVien();
         public ThemHopDong()
         {
             InitializeComponent();
@@ -28,7 +29,7 @@ namespace NguyenThongHoangAnh.Screens
             rtxt_content.ReadOnly = true;
             rtxt_content.BackColor = Color.Gray;
             txt_NgayKy.Text = DateTime.Now.ToString();
-            controller.FillCombobox("SELECT MaNV, HoTen FROM NhanVien", "MaNV", "HoTen", cbb_nv);
+            FillCbb.FillCbb(cbb_nv);
         }        
 
         void BoldText(RichTextBox rtxt)

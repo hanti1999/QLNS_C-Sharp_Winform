@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -16,6 +17,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class ThemNhanVien : Form
     {
         NhanVienController staffController = new NhanVienController();
+        FillCombobox FillCbb = new FillCombobox();
         private int GioiTinh;
 
         public ThemNhanVien()
@@ -42,13 +44,12 @@ namespace NguyenThongHoangAnh.Screens
 
         private void ThemNhanVien_Load(object sender, EventArgs e)
         {
-            staffController.FillCombobox("SELECT * FROM TonGiao", "MaTG", "TenTG", cb_tonGiao);
-            staffController.FillCombobox("SELECT * FROM DanToc", "MaDT", "TenDT", cb_danToc);
-            staffController.FillCombobox("SELECT * FROM ChucVu", "MaCV", "TenCV", cb_chucVu);
-            staffController.FillCombobox("SELECT * FROM TrinhDo", "MaTD", "TenTD", cb_trinhDo);
-            staffController.FillCombobox("SELECT * FROM PhongBan", "MaPB", "TenPB", cb_phongBan);
-            staffController.FillCombobox("SELECT MaCTY,TenCTY FROM CongTy", "MaCTY", "TenCTY", cb_congTy);
-            
+            FillCbb.FillCbb("SELECT * FROM TonGiao", "MaTG", "TenTG", cb_tonGiao);
+            FillCbb.FillCbb("SELECT * FROM DanToc", "MaDT", "TenDT", cb_danToc);
+            FillCbb.FillCbb("SELECT * FROM ChucVu", "MaCV", "TenCV", cb_chucVu);
+            FillCbb.FillCbb("SELECT * FROM TrinhDo", "MaTD", "TenTD", cb_trinhDo);
+            FillCbb.FillCbb("SELECT * FROM PhongBan", "MaPB", "TenPB", cb_phongBan);
+            FillCbb.FillCbb("SELECT MaCTY,TenCTY FROM CongTy", "MaCTY", "TenCTY", cb_congTy);            
         }
 
         private byte[] GetImage()

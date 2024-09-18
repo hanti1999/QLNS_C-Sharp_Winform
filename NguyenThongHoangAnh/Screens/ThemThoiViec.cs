@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class ThemThoiViec : Form
     {
         ThoiViecController controller = new ThoiViecController();
+        FillCombobox fillCbb = new FillCombobox();
 
         public ThemThoiViec()
         {
@@ -39,7 +41,7 @@ namespace NguyenThongHoangAnh.Screens
 
         void FormLoad ()
         {
-            controller.FillCombobox("SELECT * FROM NhanVien", "MaNV", "HoTen", cbb_nhanVien);
+            fillCbb.FillCbb("SELECT * FROM NhanVien NV WHERE NV.MaNV NOT IN (SELECT TV.MaNV FROM ThoiViec TV)", "MaNV", "HoTen", cbb_nhanVien);
             dateTimePicker2.Value = dateTimePicker1.Value.AddDays(45);
         }
 

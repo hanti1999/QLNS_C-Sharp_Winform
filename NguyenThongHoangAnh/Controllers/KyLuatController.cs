@@ -28,26 +28,6 @@ namespace NguyenThongHoangAnh.Controllers
             finally { conn.Close(); }
         }
 
-        public bool FillCombobox(string sqlString, string Ma, string Ten, ComboBox cbo)
-        {
-            try
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlString, conn);
-                cbo.DataSource = checkResult.CheckDataTable(cmd);
-                cbo.DisplayMember = Ten;
-                cbo.ValueMember = Ma;
-                if (cbo.Items.Count > 0)
-                {
-                    cbo.SelectedIndex = -1;
-                    cbo.SelectedText = "------Chọn------";
-                }
-                return true;
-            }
-            catch { return false; }
-            finally { conn.Close(); }
-        }
-
         public bool AddData(int SoQD, DateTime NgayQD, DateTime NgayKetThuc, string LyDo, string NoiDung, int MaNV)
         {
             try

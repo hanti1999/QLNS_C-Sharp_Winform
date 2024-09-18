@@ -31,41 +31,41 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoaiCong));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txt_MaLoaiCong = new System.Windows.Forms.TextBox();
-            this.txt_TenLoaiCong = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.cbb_HeSo = new System.Windows.Forms.ComboBox();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.btn_Them = new System.Windows.Forms.Button();
-            this.btn_Xoa = new System.Windows.Forms.Button();
-            this.btn_Sua = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.MaLoaiCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TenLoaiCong = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btn_Sua = new System.Windows.Forms.Button();
+            this.btn_Xoa = new System.Windows.Forms.Button();
+            this.btn_Them = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txt_TenLoaiCong = new System.Windows.Forms.TextBox();
+            this.txt_MaLoaiCong = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cbb_HeSo = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.panel3.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // bindingNavigator1
@@ -93,6 +93,13 @@
             this.bindingNavigator1.Size = new System.Drawing.Size(464, 25);
             this.bindingNavigator1.TabIndex = 0;
             this.bindingNavigator1.Text = "bindingNavigator1";
+            // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
             // bindingNavigatorMoveFirstItem
             // 
@@ -127,16 +134,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 22);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 25);
             // 
             // bindingNavigatorMoveNextItem
@@ -159,7 +159,7 @@
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 25);
             // 
             // panel1
@@ -171,107 +171,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(440, 401);
             this.panel1.TabIndex = 1;
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.cbb_HeSo);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txt_TenLoaiCong);
-            this.panel2.Controls.Add(this.txt_MaLoaiCong);
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(3, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(434, 102);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(3, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 19);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Mã loại công:";
-            // 
-            // txt_MaLoaiCong
-            // 
-            this.txt_MaLoaiCong.Location = new System.Drawing.Point(102, 6);
-            this.txt_MaLoaiCong.Name = "txt_MaLoaiCong";
-            this.txt_MaLoaiCong.Size = new System.Drawing.Size(80, 26);
-            this.txt_MaLoaiCong.TabIndex = 1;
-            // 
-            // txt_TenLoaiCong
-            // 
-            this.txt_TenLoaiCong.Location = new System.Drawing.Point(102, 38);
-            this.txt_TenLoaiCong.Name = "txt_TenLoaiCong";
-            this.txt_TenLoaiCong.Size = new System.Drawing.Size(206, 26);
-            this.txt_TenLoaiCong.TabIndex = 2;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(3, 45);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(93, 19);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Tên loại công:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 78);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(48, 19);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Hệ số:";
-            // 
-            // cbb_HeSo
-            // 
-            this.cbb_HeSo.FormattingEnabled = true;
-            this.cbb_HeSo.Location = new System.Drawing.Point(102, 70);
-            this.cbb_HeSo.Name = "cbb_HeSo";
-            this.cbb_HeSo.Size = new System.Drawing.Size(80, 27);
-            this.cbb_HeSo.TabIndex = 5;
-            // 
-            // panel3
-            // 
-            this.panel3.Controls.Add(this.btn_Sua);
-            this.panel3.Controls.Add(this.btn_Xoa);
-            this.panel3.Controls.Add(this.btn_Them);
-            this.panel3.Location = new System.Drawing.Point(3, 111);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(434, 43);
-            this.panel3.TabIndex = 1;
-            // 
-            // btn_Them
-            // 
-            this.btn_Them.Location = new System.Drawing.Point(3, 3);
-            this.btn_Them.Name = "btn_Them";
-            this.btn_Them.Size = new System.Drawing.Size(75, 36);
-            this.btn_Them.TabIndex = 0;
-            this.btn_Them.Text = "Thêm";
-            this.btn_Them.UseVisualStyleBackColor = true;
-            // 
-            // btn_Xoa
-            // 
-            this.btn_Xoa.Location = new System.Drawing.Point(180, 3);
-            this.btn_Xoa.Name = "btn_Xoa";
-            this.btn_Xoa.Size = new System.Drawing.Size(75, 36);
-            this.btn_Xoa.TabIndex = 1;
-            this.btn_Xoa.Text = "Xóa";
-            this.btn_Xoa.UseVisualStyleBackColor = true;
-            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
-            // 
-            // btn_Sua
-            // 
-            this.btn_Sua.Location = new System.Drawing.Point(356, 4);
-            this.btn_Sua.Name = "btn_Sua";
-            this.btn_Sua.Size = new System.Drawing.Size(75, 36);
-            this.btn_Sua.TabIndex = 2;
-            this.btn_Sua.Text = "Sửa";
-            this.btn_Sua.UseVisualStyleBackColor = true;
-            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
             // 
             // panel4
             // 
@@ -322,6 +221,108 @@
             this.HeSo.ReadOnly = true;
             this.HeSo.Width = 70;
             // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.btn_Sua);
+            this.panel3.Controls.Add(this.btn_Xoa);
+            this.panel3.Controls.Add(this.btn_Them);
+            this.panel3.Location = new System.Drawing.Point(3, 111);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(434, 43);
+            this.panel3.TabIndex = 1;
+            // 
+            // btn_Sua
+            // 
+            this.btn_Sua.Location = new System.Drawing.Point(356, 4);
+            this.btn_Sua.Name = "btn_Sua";
+            this.btn_Sua.Size = new System.Drawing.Size(75, 36);
+            this.btn_Sua.TabIndex = 2;
+            this.btn_Sua.Text = "Sửa";
+            this.btn_Sua.UseVisualStyleBackColor = true;
+            this.btn_Sua.Click += new System.EventHandler(this.btn_Sua_Click);
+            // 
+            // btn_Xoa
+            // 
+            this.btn_Xoa.Location = new System.Drawing.Point(180, 3);
+            this.btn_Xoa.Name = "btn_Xoa";
+            this.btn_Xoa.Size = new System.Drawing.Size(75, 36);
+            this.btn_Xoa.TabIndex = 1;
+            this.btn_Xoa.Text = "Xóa";
+            this.btn_Xoa.UseVisualStyleBackColor = true;
+            this.btn_Xoa.Click += new System.EventHandler(this.btn_Xoa_Click);
+            // 
+            // btn_Them
+            // 
+            this.btn_Them.Location = new System.Drawing.Point(3, 3);
+            this.btn_Them.Name = "btn_Them";
+            this.btn_Them.Size = new System.Drawing.Size(75, 36);
+            this.btn_Them.TabIndex = 0;
+            this.btn_Them.Text = "Thêm";
+            this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.cbb_HeSo);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.label2);
+            this.panel2.Controls.Add(this.txt_TenLoaiCong);
+            this.panel2.Controls.Add(this.txt_MaLoaiCong);
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(3, 3);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(434, 102);
+            this.panel2.TabIndex = 0;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(3, 78);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 19);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Hệ số:";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(3, 45);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(93, 19);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tên loại công:";
+            // 
+            // txt_TenLoaiCong
+            // 
+            this.txt_TenLoaiCong.Location = new System.Drawing.Point(102, 38);
+            this.txt_TenLoaiCong.Name = "txt_TenLoaiCong";
+            this.txt_TenLoaiCong.Size = new System.Drawing.Size(206, 26);
+            this.txt_TenLoaiCong.TabIndex = 2;
+            // 
+            // txt_MaLoaiCong
+            // 
+            this.txt_MaLoaiCong.Location = new System.Drawing.Point(102, 6);
+            this.txt_MaLoaiCong.Name = "txt_MaLoaiCong";
+            this.txt_MaLoaiCong.Size = new System.Drawing.Size(80, 26);
+            this.txt_MaLoaiCong.TabIndex = 1;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(3, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 19);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Mã loại công:";
+            // 
+            // cbb_HeSo
+            // 
+            this.cbb_HeSo.FormattingEnabled = true;
+            this.cbb_HeSo.Location = new System.Drawing.Point(102, 70);
+            this.cbb_HeSo.Name = "cbb_HeSo";
+            this.cbb_HeSo.Size = new System.Drawing.Size(80, 27);
+            this.cbb_HeSo.TabIndex = 5;
+            // 
             // LoaiCong
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -330,7 +331,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bindingNavigator1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoaiCong";
             this.Text = "LoaiCong";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
@@ -338,11 +339,11 @@
             this.bindingNavigator1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).EndInit();
             this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.panel3.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -363,7 +364,6 @@
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.ComboBox cbb_HeSo;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txt_TenLoaiCong;
@@ -378,5 +378,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiCong;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiCong;
         private System.Windows.Forms.DataGridViewTextBoxColumn HeSo;
+        private System.Windows.Forms.ComboBox cbb_HeSo;
     }
 }

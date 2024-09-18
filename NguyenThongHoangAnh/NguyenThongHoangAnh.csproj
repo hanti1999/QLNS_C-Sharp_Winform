@@ -51,6 +51,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\AuthController.cs" />
+    <Compile Include="Controllers\ChiTietNhanPhuCapController.cs" />
     <Compile Include="Controllers\CongTyController.cs" />
     <Compile Include="Controllers\HopDongController.cs" />
     <Compile Include="Controllers\KhenThuongController.cs" />
@@ -60,11 +61,19 @@
     <Compile Include="Controllers\LuanChuyenController.cs" />
     <Compile Include="Controllers\PhongBanController.cs" />
     <Compile Include="Controllers\DanTocController.cs" />
+    <Compile Include="Controllers\PhuCapController.cs" />
     <Compile Include="Controllers\ThoiViecController.cs" />
     <Compile Include="Controllers\TrinhDoController.cs" />
     <Compile Include="Controllers\ChucVuController.cs" />
     <Compile Include="Controllers\TonGiaoController.cs" />
     <Compile Include="Controllers\NhanVienController.cs" />
+    <Compile Include="Controllers\UngLuongController.cs" />
+    <Compile Include="Screens\ChiTietNhanPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ChiTietNhanPhuCap.Designer.cs">
+      <DependentUpon>ChiTietNhanPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\CongTy.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +128,18 @@
     <Compile Include="Screens\DanToc.Designer.cs">
       <DependentUpon>DanToc.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\PhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\PhuCap.Designer.cs">
+      <DependentUpon>PhuCap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemChiTietNhanPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemChiTietNhanPhuCap.Designer.cs">
+      <DependentUpon>ThemChiTietNhanPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\ThemHopDong.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +158,18 @@
     <Compile Include="Screens\ThemKyLuat.Designer.cs">
       <DependentUpon>ThemKyLuat.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\ThemLoaiCa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemLoaiCa.Designer.cs">
+      <DependentUpon>ThemLoaiCa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemLoaiCong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemLoaiCong.Designer.cs">
+      <DependentUpon>ThemLoaiCong.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\ThemLuanChuyen.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -149,11 +182,23 @@
     <Compile Include="Screens\ThemNhanVien.Designer.cs">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\ThemPhuCap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemPhuCap.Designer.cs">
+      <DependentUpon>ThemPhuCap.cs</DependentUpon>
+    </Compile>
     <Compile Include="Screens\ThemThoiViec.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Screens\ThemThoiViec.Designer.cs">
       <DependentUpon>ThemThoiViec.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Screens\ThemUngLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\ThemUngLuong.Designer.cs">
+      <DependentUpon>ThemUngLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="Screens\ThoiViec.cs">
       <SubType>Form</SubType>
@@ -217,7 +262,15 @@
     <Compile Include="Screens\NhanVien.Designer.cs">
       <DependentUpon>NhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="Screens\UngLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Screens\UngLuong.Designer.cs">
+      <DependentUpon>UngLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="utils\CheckResult.cs" />
+    <Compile Include="utils\FillCombobox.cs" />
+    <Compile Include="utils\FillNhanVien.cs" />
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
@@ -231,6 +284,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Screens\ChiTietNhanPhuCap.resx">
+      <DependentUpon>ChiTietNhanPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\CongTy.resx">
       <DependentUpon>CongTy.cs</DependentUpon>
     </EmbeddedResource>
@@ -258,6 +314,12 @@
     <EmbeddedResource Include="Screens\DanToc.resx">
       <DependentUpon>DanToc.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\PhuCap.resx">
+      <DependentUpon>PhuCap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemChiTietNhanPhuCap.resx">
+      <DependentUpon>ThemChiTietNhanPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemHopDong.resx">
       <DependentUpon>ThemHopDong.cs</DependentUpon>
     </EmbeddedResource>
@@ -267,14 +329,26 @@
     <EmbeddedResource Include="Screens\ThemKyLuat.resx">
       <DependentUpon>ThemKyLuat.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemLoaiCa.resx">
+      <DependentUpon>ThemLoaiCa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemLoaiCong.resx">
+      <DependentUpon>ThemLoaiCong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemLuanChuyen.resx">
       <DependentUpon>ThemLuanChuyen.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemNhanVien.resx">
       <DependentUpon>ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemPhuCap.resx">
+      <DependentUpon>ThemPhuCap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThemThoiViec.resx">
       <DependentUpon>ThemThoiViec.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\ThemUngLuong.resx">
+      <DependentUpon>ThemUngLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\ThoiViec.resx">
       <DependentUpon>ThoiViec.cs</DependentUpon>
@@ -302,6 +376,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Screens\NhanVien.resx">
       <DependentUpon>NhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Screens\UngLuong.resx">
+      <DependentUpon>UngLuong.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

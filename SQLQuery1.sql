@@ -52,24 +52,6 @@ CREATE TABLE CongTy (
 	DiaChi NVARCHAR(255)
 )
 
---CREATE TABLE BaoHiem (
---	MaBH INT IDENTITY(1,1) PRIMARY KEY,
---	SoBaoHiem NVARCHAR(20),
---	NoiCap NVARCHAR(255),
---	NoiDangKyKham NVARCHAR(255),
---	MaNV INT REFERENCES NhanVien(MaNV),
---)
-
---CREATE TABLE LuongNhanVien (
---	MaLuong INT IDENTITY(1,1) PRIMARY KEY,
---	Luong FLOAT, 
---	Thuong FLOAT,
---	PhuCap FLOAT,
---	LuongKyTruoc FLOAT,
---	UngLuong FLOAT,
---	MaNV INT REFERENCES NhanVien(MaNV),
---)
-
 CREATE TABLE NhanVien (
 	MaNV INT IDENTITY(1,1) PRIMARY KEY,
 	MaDT INT,
@@ -172,6 +154,29 @@ CREATE TABLE LoaiCong (
 	HeSo FLOAT
 )
 
+CREATE TABLE PhuCap (
+	MaPhuCap INT IDENTITY(1,1) PRIMARY KEY,
+	TenPhuCap NVARCHAR(100),
+	SoTien FLOAT
+)
+
+CREATE TABLE ChiTietNhanPhuCap (
+	MaCTPC INT IDENTITY(1,1) PRIMARY KEY,
+	MaNV INT REFERENCES NhanVien(MaNV) ON UPDATE CASCADE ON DELETE CASCADE,
+	MaPhuCap INT REFERENCES PhuCap(MaPhuCap) ON UPDATE CASCADE ON DELETE CASCADE,
+	NgayGhiPhieu DATE,
+	NgayNhanPhuCap DATE,
+	GhiChu NVARCHAR(100),
+)
+
+CREATE TABLE UngLuong (
+	MaUngLuong INT IDENTITY(1,1) PRIMARY KEY,
+	MaNV INT REFERENCES NhanVien(MaNV) ON UPDATE CASCADE ON DELETE CASCADE,
+	NgayGhiPhieu DATE,
+	NgayUngLuong DATE,
+	SoTien DECIMAL(18,2),
+	GhiChu NVARCHAR(100)
+)
 -- Test
 
 INSERT INTO TaiKhoan
@@ -201,6 +206,9 @@ VALUES (N'Công ngày thường', 1), (N'Công ngày lễ', 1.5), (N'Công ngày
 INSERT INTO LoaiCa (TenLoaiCa, HeSo)
 VALUES (N'Ca đêm', 1.4), (N'Ca sáng', 1), (N'Ca chiều', 1)
 
+INSERT INTO PhuCap (TenPhuCap, SoTien)
+VALUES (N'Xăng xe', 800000), (N'Điện thoại', 100000)
+
 SELECT NV.MaNV, DT.TenDT, TG.TenTG, TD.TenTD, PB.TenPB, CV.TenCV, CTY.TenCTY, NV.HoTen, NV.GioiTinh, NV.NgaySinh, NV.DiaChi, NV.CCCD, NV.QueQuan, NV.NoiOHienTai, NV.DienThoai, NV.HinhAnh  
 FROM NhanVien NV
 INNER JOIN DanToc DT ON NV.MaDT = DT.MaDT
@@ -219,3 +227,5 @@ JOIN PhongBan pbMoi ON lc.PBMoi = pbMoi.MaPB
 SELECT KT.SoQD, NV.HoTen, KT.NgayQD, KT.LyDo, KT.NoiDung FROM KhenThuong KT INNER JOIN NhanVien NV ON NV.MaNV = KT.MaNV
 
 SELECT tv.SoQD, tv.NgayNopDon, tv.NgayNghi, nv.MaNV, nv.HoTen, tv.LyDo, tv.GhiChu FROM ThoiViec tv JOIN NhanVien nv ON tv.MaNV = nv.MaNV
+
+SELECT CT.MaCTPC, NV.HoTen, PC.TenPhuCap, CT.NgayGhiPhieu, CT.NgayNhanPhuCap, CT.GhiChu FROM ChiTietNhanPhuCap CT JOIN NhanVien NV ON CT.MaNV = NV.MaNV JOIN PhuCap PC ON CT.MaPhuCap = PC.MaPhuCap

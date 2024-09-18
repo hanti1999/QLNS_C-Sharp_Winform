@@ -1,4 +1,5 @@
 ﻿using NguyenThongHoangAnh.Controllers;
+using NguyenThongHoangAnh.utils;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace NguyenThongHoangAnh.Screens
     public partial class KyLuat : Form
     {
         KyLuatController KyLuatController = new KyLuatController();
+        FillCombobox FillCbb = new FillCombobox();
         public KyLuat()
         {
             InitializeComponent();
@@ -37,7 +39,7 @@ namespace NguyenThongHoangAnh.Screens
 
         void LoadForm()
         {
-            KyLuatController.FillCombobox("SELECT * FROM NhanVien", "MaNV", "HoTen", cbb_NV);
+            FillCbb.FillCbb("SELECT * FROM NhanVien NV WHERE NV.MaNV NOT IN (SELECT TV.MaNV FROM ThoiViec TV)", "MaNV", "HoTen", cbb_NV);
             bindingSource1.DataSource = KyLuatController.GetData();
             bindingNavigator1.BindingSource = bindingSource1;
             dataGridView1.DataSource = bindingSource1;

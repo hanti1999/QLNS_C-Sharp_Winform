@@ -45,6 +45,9 @@
             this.ts_kyLuat = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_luanCHuyen = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_thoiviec = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_LoaiCa = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_LoaiCong = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_PhuCap = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_refresh = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -58,8 +61,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.ts_LoaiCa = new System.Windows.Forms.ToolStripMenuItem();
-            this.ts_LoaiCong = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_CTPC = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -122,7 +124,9 @@
             this.ts_luanCHuyen,
             this.ts_thoiviec,
             this.ts_LoaiCa,
-            this.ts_LoaiCong});
+            this.ts_LoaiCong,
+            this.ts_PhuCap,
+            this.ts_CTPC});
             this.dânTộcToolStripMenuItem.Name = "dânTộcToolStripMenuItem";
             this.dânTộcToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.dânTộcToolStripMenuItem.Text = "Danh mục";
@@ -130,86 +134,107 @@
             // ts_ethnicities
             // 
             this.ts_ethnicities.Name = "ts_ethnicities";
-            this.ts_ethnicities.Size = new System.Drawing.Size(180, 22);
+            this.ts_ethnicities.Size = new System.Drawing.Size(188, 22);
             this.ts_ethnicities.Text = "Dân tộc";
             this.ts_ethnicities.Click += new System.EventHandler(this.ts_ethnicities_Click);
             // 
             // ts_religion
             // 
             this.ts_religion.Name = "ts_religion";
-            this.ts_religion.Size = new System.Drawing.Size(180, 22);
+            this.ts_religion.Size = new System.Drawing.Size(188, 22);
             this.ts_religion.Text = "Tôn giáo";
             this.ts_religion.Click += new System.EventHandler(this.ts_religion_Click);
             // 
             // ts_level
             // 
             this.ts_level.Name = "ts_level";
-            this.ts_level.Size = new System.Drawing.Size(180, 22);
+            this.ts_level.Size = new System.Drawing.Size(188, 22);
             this.ts_level.Text = "Trình độ";
             this.ts_level.Click += new System.EventHandler(this.ts_level_Click);
             // 
             // ts_department
             // 
             this.ts_department.Name = "ts_department";
-            this.ts_department.Size = new System.Drawing.Size(180, 22);
+            this.ts_department.Size = new System.Drawing.Size(188, 22);
             this.ts_department.Text = "Phòng ban";
             this.ts_department.Click += new System.EventHandler(this.ts_department_Click);
             // 
             // tx_position
             // 
             this.tx_position.Name = "tx_position";
-            this.tx_position.Size = new System.Drawing.Size(180, 22);
+            this.tx_position.Size = new System.Drawing.Size(188, 22);
             this.tx_position.Text = "Chức vụ";
             this.tx_position.Click += new System.EventHandler(this.tx_position_Click);
             // 
             // ts_company
             // 
             this.ts_company.Name = "ts_company";
-            this.ts_company.Size = new System.Drawing.Size(180, 22);
+            this.ts_company.Size = new System.Drawing.Size(188, 22);
             this.ts_company.Text = "Công ty";
             this.ts_company.Click += new System.EventHandler(this.ts_company_Click);
             // 
             // ts_staff
             // 
             this.ts_staff.Name = "ts_staff";
-            this.ts_staff.Size = new System.Drawing.Size(180, 22);
+            this.ts_staff.Size = new System.Drawing.Size(188, 22);
             this.ts_staff.Text = "Nhân viên";
             this.ts_staff.Click += new System.EventHandler(this.ts_staff_Click);
             // 
             // ts_HopDong
             // 
             this.ts_HopDong.Name = "ts_HopDong";
-            this.ts_HopDong.Size = new System.Drawing.Size(180, 22);
+            this.ts_HopDong.Size = new System.Drawing.Size(188, 22);
             this.ts_HopDong.Text = "Hợp đồng";
             this.ts_HopDong.Click += new System.EventHandler(this.ts_HopDong_Click);
             // 
             // ts_KhenThuong
             // 
             this.ts_KhenThuong.Name = "ts_KhenThuong";
-            this.ts_KhenThuong.Size = new System.Drawing.Size(180, 22);
+            this.ts_KhenThuong.Size = new System.Drawing.Size(188, 22);
             this.ts_KhenThuong.Text = "Khen thưởng";
             this.ts_KhenThuong.Click += new System.EventHandler(this.ts_KhenThuong_Click);
             // 
             // ts_kyLuat
             // 
             this.ts_kyLuat.Name = "ts_kyLuat";
-            this.ts_kyLuat.Size = new System.Drawing.Size(180, 22);
+            this.ts_kyLuat.Size = new System.Drawing.Size(188, 22);
             this.ts_kyLuat.Text = "Kỷ luật";
             this.ts_kyLuat.Click += new System.EventHandler(this.ts_kyLuat_Click);
             // 
             // ts_luanCHuyen
             // 
             this.ts_luanCHuyen.Name = "ts_luanCHuyen";
-            this.ts_luanCHuyen.Size = new System.Drawing.Size(180, 22);
+            this.ts_luanCHuyen.Size = new System.Drawing.Size(188, 22);
             this.ts_luanCHuyen.Text = "Luân chuyển";
             this.ts_luanCHuyen.Click += new System.EventHandler(this.ts_luanCHuyen_Click);
             // 
             // ts_thoiviec
             // 
             this.ts_thoiviec.Name = "ts_thoiviec";
-            this.ts_thoiviec.Size = new System.Drawing.Size(180, 22);
+            this.ts_thoiviec.Size = new System.Drawing.Size(188, 22);
             this.ts_thoiviec.Text = "Thôi việc";
             this.ts_thoiviec.Click += new System.EventHandler(this.ts_thoiviec_Click);
+            // 
+            // ts_LoaiCa
+            // 
+            this.ts_LoaiCa.Name = "ts_LoaiCa";
+            this.ts_LoaiCa.Size = new System.Drawing.Size(188, 22);
+            this.ts_LoaiCa.Text = "Loại ca";
+            this.ts_LoaiCa.Click += new System.EventHandler(this.ts_LoaiCa_Click);
+            // 
+            // ts_LoaiCong
+            // 
+            this.ts_LoaiCong.Name = "ts_LoaiCong";
+            this.ts_LoaiCong.Size = new System.Drawing.Size(188, 22);
+            this.ts_LoaiCong.Text = "Loại công";
+            this.ts_LoaiCong.Click += new System.EventHandler(this.ts_LoaiCong_Click);
+            // 
+            // ts_PhuCap
+            // 
+            this.ts_PhuCap.Name = "ts_PhuCap";
+            this.ts_PhuCap.Size = new System.Drawing.Size(188, 22);
+            this.ts_PhuCap.Text = "Phụ cấp";
+            this.ts_PhuCap.Click += new System.EventHandler(this.ts_PhuCap_Click);
             // 
             // ts_refresh
             // 
@@ -331,19 +356,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Danh sách chức vụ";
             // 
-            // ts_LoaiCa
+            // ts_CTPC
             // 
-            this.ts_LoaiCa.Name = "ts_LoaiCa";
-            this.ts_LoaiCa.Size = new System.Drawing.Size(180, 22);
-            this.ts_LoaiCa.Text = "Loại ca";
-            this.ts_LoaiCa.Click += new System.EventHandler(this.ts_LoaiCa_Click);
-            // 
-            // ts_LoaiCong
-            // 
-            this.ts_LoaiCong.Name = "ts_LoaiCong";
-            this.ts_LoaiCong.Size = new System.Drawing.Size(180, 22);
-            this.ts_LoaiCong.Text = "Loại công";
-            this.ts_LoaiCong.Click += new System.EventHandler(this.ts_LoaiCong_Click);
+            this.ts_CTPC.Name = "ts_CTPC";
+            this.ts_CTPC.Size = new System.Drawing.Size(188, 22);
+            this.ts_CTPC.Text = "Chi tiết nhận phụ cấp";
+            this.ts_CTPC.Click += new System.EventHandler(this.ts_CTPC_Click);
             // 
             // Main
             // 
@@ -415,6 +433,8 @@
         private System.Windows.Forms.ToolStripMenuItem ts_thoiviec;
         private System.Windows.Forms.ToolStripMenuItem ts_LoaiCa;
         private System.Windows.Forms.ToolStripMenuItem ts_LoaiCong;
+        private System.Windows.Forms.ToolStripMenuItem ts_PhuCap;
+        private System.Windows.Forms.ToolStripMenuItem ts_CTPC;
     }
 }
 

@@ -31,6 +31,9 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoaiCa));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.MaLoaiCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
@@ -55,9 +58,6 @@
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
-            this.MaLoaiCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenLoaiCa = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HeSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -84,6 +84,29 @@
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.Size = new System.Drawing.Size(428, 232);
             this.dataGridView1.TabIndex = 0;
+            // 
+            // MaLoaiCa
+            // 
+            this.MaLoaiCa.DataPropertyName = "MaLoaiCa";
+            this.MaLoaiCa.HeaderText = "Mã Loại ca";
+            this.MaLoaiCa.Name = "MaLoaiCa";
+            this.MaLoaiCa.ReadOnly = true;
+            this.MaLoaiCa.Width = 104;
+            // 
+            // TenLoaiCa
+            // 
+            this.TenLoaiCa.DataPropertyName = "TenLoaiCa";
+            this.TenLoaiCa.HeaderText = "Tên loại ca";
+            this.TenLoaiCa.Name = "TenLoaiCa";
+            this.TenLoaiCa.ReadOnly = true;
+            // 
+            // HeSo
+            // 
+            this.HeSo.DataPropertyName = "HeSo";
+            this.HeSo.HeaderText = "Hệ số";
+            this.HeSo.Name = "HeSo";
+            this.HeSo.ReadOnly = true;
+            this.HeSo.Width = 70;
             // 
             // btn_Sua
             // 
@@ -113,6 +136,7 @@
             this.btn_Them.TabIndex = 0;
             this.btn_Them.Text = "Thêm";
             this.btn_Them.UseVisualStyleBackColor = true;
+            this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
             // panel3
             // 
@@ -298,30 +322,6 @@
             this.bindingNavigator1.TabIndex = 2;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
-            // MaLoaiCa
-            // 
-            this.MaLoaiCa.DataPropertyName = "MaLoaiCa";
-            this.MaLoaiCa.HeaderText = "Mã Loại ca";
-            this.MaLoaiCa.Name = "MaLoaiCa";
-            this.MaLoaiCa.ReadOnly = true;
-            this.MaLoaiCa.Width = 83;
-            // 
-            // TenLoaiCa
-            // 
-            this.TenLoaiCa.DataPropertyName = "TenLoaiCa";
-            this.TenLoaiCa.HeaderText = "Tên loại ca";
-            this.TenLoaiCa.Name = "TenLoaiCa";
-            this.TenLoaiCa.ReadOnly = true;
-            this.TenLoaiCa.Width = 79;
-            // 
-            // HeSo
-            // 
-            this.HeSo.DataPropertyName = "HeSo";
-            this.HeSo.HeaderText = "Hệ số";
-            this.HeSo.Name = "HeSo";
-            this.HeSo.ReadOnly = true;
-            this.HeSo.Width = 52;
-            // 
             // LoaiCa
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
@@ -330,7 +330,7 @@
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.bindingNavigator1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "LoaiCa";
             this.Text = "LoaiCa";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();

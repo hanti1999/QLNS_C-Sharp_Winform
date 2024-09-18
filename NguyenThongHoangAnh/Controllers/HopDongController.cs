@@ -63,31 +63,5 @@ namespace NguyenThongHoangAnh.Controllers
                 conn.Close();
             }
         }
-
-        public bool FillCombobox(string sqlString, string Ma, string Ten, ComboBox cbo)
-        {
-            try
-            {
-                conn.Open();
-                SqlCommand cmd = new SqlCommand(sqlString, conn);
-                cbo.DataSource = checkResult.CheckDataTable(cmd);
-                cbo.DisplayMember = Ten;
-                cbo.ValueMember = Ma;
-                if (cbo.Items.Count > 0)
-                {
-                    cbo.SelectedIndex = -1;
-                    cbo.SelectedText = "------Chọn------";
-                }
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
-            finally
-            {
-                conn.Close();
-            }
-        }
     }
 }
