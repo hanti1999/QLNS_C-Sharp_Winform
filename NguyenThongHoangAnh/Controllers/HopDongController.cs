@@ -16,13 +16,13 @@ namespace NguyenThongHoangAnh.Controllers
     {
         SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["connStr"].ConnectionString);
         CheckResult checkResult = new CheckResult();
-        public bool AddData(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, string ThoiGian, string NoiDung, int MaNV)
+        public bool AddData(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, double LuongCoBan, string ThoiGian, string NoiDung, int MaNV)
         {
             try
             {
                 conn.Open();
-                string query = "INSERT INTO HopDong(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, ThoiGian, HeSoLuong, NoiDung, MaNV) " +
-                    "VALUES (@SoHD, @NgayKy, @NgayBatDau, @NgayKetThuc, @LanKy, @ThoiGian, @HeSoLuong, @NoiDung, @MaNV)";
+                string query = "INSERT INTO HopDong(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, ThoiGian, HeSoLuong, LuongCoBan, NoiDung, MaNV) " +
+                    "VALUES (@SoHD, @NgayKy, @NgayBatDau, @NgayKetThuc, @LanKy, @ThoiGian, @HeSoLuong, @LuongCoBan, @NoiDung, @MaNV)";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@SoHD", SoHD);
                 cmd.Parameters.AddWithValue("@NgayKy", NgayKy);
@@ -31,6 +31,7 @@ namespace NguyenThongHoangAnh.Controllers
                 cmd.Parameters.AddWithValue("@LanKy", LanKy);
                 cmd.Parameters.AddWithValue("@ThoiGian", ThoiGian);
                 cmd.Parameters.AddWithValue("@HeSoLuong", HeSoLuong);
+                cmd.Parameters.AddWithValue("@LuongCoBan", LuongCoBan);
                 cmd.Parameters.AddWithValue("@NoiDung", NoiDung);
                 cmd.Parameters.AddWithValue("@MaNV", MaNV);
 
@@ -50,7 +51,7 @@ namespace NguyenThongHoangAnh.Controllers
             try
             {
                 conn.Open();
-                string query = "SELECT HD.SoHD, HD.NgayKy, HD.NgayBatDau, HD.NgayKetThuc, HD.LanKy, HD.ThoiGian, HD.HeSoLuong, HD.NoiDung, NV.HoTen FROM HopDong HD INNER JOIN NhanVien NV ON NV.MaNV = HD.MaNV";
+                string query = "SELECT HD.SoHD, HD.NgayKy, HD.NgayBatDau, HD.NgayKetThuc, HD.LanKy, HD.ThoiGian, HD.HeSoLuong, HD.LuongCoBan, HD.NoiDung, NV.HoTen FROM HopDong HD INNER JOIN NhanVien NV ON NV.MaNV = HD.MaNV";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 return checkResult.CheckDataTable(cmd);
             }

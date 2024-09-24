@@ -48,6 +48,9 @@
             this.ts_LoaiCa = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_LoaiCong = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_PhuCap = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_CTPC = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_TangCa = new System.Windows.Forms.ToolStripMenuItem();
+            this.ts_LoaiPhep = new System.Windows.Forms.ToolStripMenuItem();
             this.ts_refresh = new System.Windows.Forms.ToolStripMenuItem();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.label1 = new System.Windows.Forms.Label();
@@ -61,7 +64,7 @@
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView4 = new System.Windows.Forms.DataGridView();
             this.label4 = new System.Windows.Forms.Label();
-            this.ts_CTPC = new System.Windows.Forms.ToolStripMenuItem();
+            this.tts_ChamCong = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.panel1.SuspendLayout();
@@ -126,7 +129,10 @@
             this.ts_LoaiCa,
             this.ts_LoaiCong,
             this.ts_PhuCap,
-            this.ts_CTPC});
+            this.ts_CTPC,
+            this.ts_TangCa,
+            this.ts_LoaiPhep,
+            this.tts_ChamCong});
             this.dânTộcToolStripMenuItem.Name = "dânTộcToolStripMenuItem";
             this.dânTộcToolStripMenuItem.Size = new System.Drawing.Size(74, 20);
             this.dânTộcToolStripMenuItem.Text = "Danh mục";
@@ -235,6 +241,27 @@
             this.ts_PhuCap.Size = new System.Drawing.Size(188, 22);
             this.ts_PhuCap.Text = "Phụ cấp";
             this.ts_PhuCap.Click += new System.EventHandler(this.ts_PhuCap_Click);
+            // 
+            // ts_CTPC
+            // 
+            this.ts_CTPC.Name = "ts_CTPC";
+            this.ts_CTPC.Size = new System.Drawing.Size(188, 22);
+            this.ts_CTPC.Text = "Chi tiết nhận phụ cấp";
+            this.ts_CTPC.Click += new System.EventHandler(this.ts_CTPC_Click);
+            // 
+            // ts_TangCa
+            // 
+            this.ts_TangCa.Name = "ts_TangCa";
+            this.ts_TangCa.Size = new System.Drawing.Size(188, 22);
+            this.ts_TangCa.Text = "Tăng ca";
+            this.ts_TangCa.Click += new System.EventHandler(this.ts_TangCa_Click);
+            // 
+            // ts_LoaiPhep
+            // 
+            this.ts_LoaiPhep.Name = "ts_LoaiPhep";
+            this.ts_LoaiPhep.Size = new System.Drawing.Size(188, 22);
+            this.ts_LoaiPhep.Text = "Loại phép";
+            this.ts_LoaiPhep.Click += new System.EventHandler(this.ts_LoaiPhep_Click);
             // 
             // ts_refresh
             // 
@@ -356,12 +383,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Danh sách chức vụ";
             // 
-            // ts_CTPC
+            // tts_ChamCong
             // 
-            this.ts_CTPC.Name = "ts_CTPC";
-            this.ts_CTPC.Size = new System.Drawing.Size(188, 22);
-            this.ts_CTPC.Text = "Chi tiết nhận phụ cấp";
-            this.ts_CTPC.Click += new System.EventHandler(this.ts_CTPC_Click);
+            this.tts_ChamCong.Name = "tts_ChamCong";
+            this.tts_ChamCong.Size = new System.Drawing.Size(188, 22);
+            this.tts_ChamCong.Text = "Chấm công";
+            this.tts_ChamCong.Click += new System.EventHandler(this.tts_ChamCong_Click);
             // 
             // Main
             // 
@@ -435,6 +462,9 @@
         private System.Windows.Forms.ToolStripMenuItem ts_LoaiCong;
         private System.Windows.Forms.ToolStripMenuItem ts_PhuCap;
         private System.Windows.Forms.ToolStripMenuItem ts_CTPC;
+        private System.Windows.Forms.ToolStripMenuItem ts_TangCa;
+        private System.Windows.Forms.ToolStripMenuItem ts_LoaiPhep;
+        private System.Windows.Forms.ToolStripMenuItem tts_ChamCong;
     }
 }
 

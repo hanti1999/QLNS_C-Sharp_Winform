@@ -85,12 +85,12 @@ CREATE TABLE HopDong (
 	LanKy NVARCHAR(10),
 	ThoiGian NVARCHAR(10),
 	HeSoLuong FLOAT,
+	LuongCoBan DECIMAL(18,2),
 	NoiDung NVARCHAR(MAX),
 	MaNV INT REFERENCES NhanVien(MaNV)
 	ON UPDATE CASCADE
 	ON DELETE CASCADE
 )
-
 --ALTER TABLE NhanVIen
 --ADD MaTonGiao INT,
 --FOREIGN KEY (MaTonGiao) REFERENCES TonGiao(MaTonGiao);
@@ -177,6 +177,78 @@ CREATE TABLE UngLuong (
 	SoTien DECIMAL(18,2),
 	GhiChu NVARCHAR(100)
 )
+
+CREATE TABLE TangCa (
+	MaTangCa INT IDENTITY(1,1) PRIMARY KEY,
+	NgayTangCa DATE,
+	MaNV INT REFERENCES NhanVien(MaNV),
+	MaLoaiCa INT REFERENCES LoaiCa(MaLoaiCa),
+	SoGio FLOAT,
+	HeSo FLOAT,
+	SoTien DECIMAL(18,2),
+	GhiChu NVARCHAR(100)
+)
+
+CREATE TABLE LoaiPhep (
+	MaLoaiPhep INT IDENTITY(1,1) PRIMARY KEY,
+	TenLoaiPhep NVARCHAR(100),
+	HeSo FLOAT,
+)
+
+CREATE TABLE KyCong (
+	MaKyCong INT PRIMARY KEY,
+	Thang INT,
+	Nam INT,
+	NgayTinhCong DATE,
+	NgayCongTrongThang INT,
+	KhoaCong BIT,
+)
+
+CREATE TABLE ChiTietKyCong (
+	MaCTKC INT IDENTITY(1,1) PRIMARY KEY,
+	MaNV INT REFERENCES NhanVien(MaNV),
+	MaKyCong INT REFERENCES KyCong(MaKyCong),
+	D1 NVARCHAR(20),
+	D2 NVARCHAR(20),
+	D3 NVARCHAR(20),
+	D4 NVARCHAR(20),
+	D5 NVARCHAR(20),
+	D6 NVARCHAR(20),
+	D7 NVARCHAR(20),
+	D8 NVARCHAR(20),
+	D9 NVARCHAR(20),
+	D10 NVARCHAR(20),
+	D11 NVARCHAR(20),
+	D12 NVARCHAR(20),
+	D13 NVARCHAR(20),
+	D14 NVARCHAR(20),
+	D15 NVARCHAR(20),
+	D16 NVARCHAR(20),
+	D17 NVARCHAR(20),
+	D18 NVARCHAR(20),
+	D19 NVARCHAR(20),
+	D20 NVARCHAR(20),
+	D21 NVARCHAR(20),
+	D22 NVARCHAR(20),
+	D23 NVARCHAR(20),
+	D24 NVARCHAR(20),
+	D25 NVARCHAR(20),
+	D26 NVARCHAR(20),
+	D27 NVARCHAR(20),
+	D28 NVARCHAR(20),
+	D29 NVARCHAR(20),
+	D30 NVARCHAR(20),
+	D31 NVARCHAR(20),
+	NgayCongTrongThang INT,
+	NgayCongThucTe INT
+)
+
+CREATE TABLE ChiTietNghiPhep (
+	MaCTNP INT IDENTITY(1,1) PRIMARY KEY,
+	MaCTKC INT REFERENCES ChiTietKyCong(MaCTKC) ,
+	MaLoaiPhep INT REFERENCES LoaiPhep(MaLoaiPhep),
+	ThoiGianNghi DATE,
+)
 -- Test
 
 INSERT INTO TaiKhoan
@@ -207,7 +279,7 @@ INSERT INTO LoaiCa (TenLoaiCa, HeSo)
 VALUES (N'Ca đêm', 1.4), (N'Ca sáng', 1), (N'Ca chiều', 1)
 
 INSERT INTO PhuCap (TenPhuCap, SoTien)
-VALUES (N'Xăng xe', 800000), (N'Điện thoại', 100000)
+VALUES (N'Xăng xe', 800000), (N'Điện thoại', 200000)
 
 SELECT NV.MaNV, DT.TenDT, TG.TenTG, TD.TenTD, PB.TenPB, CV.TenCV, CTY.TenCTY, NV.HoTen, NV.GioiTinh, NV.NgaySinh, NV.DiaChi, NV.CCCD, NV.QueQuan, NV.NoiOHienTai, NV.DienThoai, NV.HinhAnh  
 FROM NhanVien NV
@@ -229,3 +301,5 @@ SELECT KT.SoQD, NV.HoTen, KT.NgayQD, KT.LyDo, KT.NoiDung FROM KhenThuong KT INNE
 SELECT tv.SoQD, tv.NgayNopDon, tv.NgayNghi, nv.MaNV, nv.HoTen, tv.LyDo, tv.GhiChu FROM ThoiViec tv JOIN NhanVien nv ON tv.MaNV = nv.MaNV
 
 SELECT CT.MaCTPC, NV.HoTen, PC.TenPhuCap, CT.NgayGhiPhieu, CT.NgayNhanPhuCap, CT.GhiChu FROM ChiTietNhanPhuCap CT JOIN NhanVien NV ON CT.MaNV = NV.MaNV JOIN PhuCap PC ON CT.MaPhuCap = PC.MaPhuCap
+
+SELECT LuongCoBan * HeSoLuong AS LuongHopDong FROM HopDong WHERE MaNV=1

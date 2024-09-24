@@ -47,7 +47,7 @@ namespace NguyenThongHoangAnh.Controllers
             {
                 conn.Open();
                 string query = "UPDATE ChiTietNhanPhuCap " +
-                    "SET MaNV=@MaNV, MaPhuCap=@MaPhuCap, NgayGhiPhieu=@NgayGhiPhieu, @NgayNhanPhuCap=@NgayNhanPhuCap, GhiChu=@GhiChu " +
+                    "SET MaNV=@MaNV, MaPhuCap=@MaPhuCap, NgayGhiPhieu=@NgayGhiPhieu, NgayNhanPhuCap=@NgayNhanPhuCap, GhiChu=@GhiChu " +
                     "WHERE MaCTPC=@MaCTPC";
                 SqlCommand cmd = new SqlCommand(query, conn);
                 cmd.Parameters.AddWithValue("@MaCTPC", MaCTPC);

@@ -177,5 +177,23 @@ namespace NguyenThongHoangAnh
             ChiTietNhanPhuCap form = new ChiTietNhanPhuCap();
             form.Show();
         }
+
+        private void ts_TangCa_Click(object sender, EventArgs e)
+        {
+            TangCa form = new TangCa();
+            form.Show();
+        }
+
+        private void ts_LoaiPhep_Click(object sender, EventArgs e)
+        {
+            LoaiPhep lc = new LoaiPhep();
+            lc.Show();
+        }
+
+        private void tts_ChamCong_Click(object sender, EventArgs e)
+        {
+            BangChamCong form = new BangChamCong();
+            form.Show();
+        }
     }
 }

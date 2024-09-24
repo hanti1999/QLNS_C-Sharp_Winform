@@ -41,9 +41,9 @@ namespace NguyenThongHoangAnh.Screens
             themHopDong.ShowDialog();
         }
 
-        private void ThemHopDong_ThemEvent(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, string ThoiGian, string NoiDung, int MaNV)
+        private void ThemHopDong_ThemEvent(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, double LuongCoBan, string ThoiGian, string NoiDung, int MaNV)
         {
-            bool result = controller.AddData(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, HeSoLuong, ThoiGian, NoiDung, MaNV);
+            bool result = controller.AddData(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, HeSoLuong, LuongCoBan, ThoiGian, NoiDung, MaNV);
             if (result)
             {
                 LoadForm();
@@ -69,6 +69,7 @@ namespace NguyenThongHoangAnh.Screens
             cbb_LanKy.Text = row.Cells["LanKy"].Value.ToString();
             cbb_ThoiGian.Text = row.Cells["ThoiGian"].Value.ToString();
             cbb_heSoLuong.Text = row.Cells["HeSoLuong"].Value.ToString();
+            txt_LuongCoBan.Text = row.Cells["LuongCoBan"].Value.ToString();
             cbb_nv.Text = row.Cells["HoTen"].Value.ToString();
         }
     }

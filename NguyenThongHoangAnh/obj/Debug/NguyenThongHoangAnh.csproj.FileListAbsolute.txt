@@ -130,3 +130,9 @@ F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemChiTietNhanPhuCap.resources
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemUngLuong.resources
 F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.UngLuong.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.TangCa.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemTangCa.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.BangChamCong.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.LoaiPhep.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemLoaiPhep.resources
+F:\PMQLNS\QLNS_C-Sharp_Winform\NguyenThongHoangAnh\obj\Debug\NguyenThongHoangAnh.Screens.ThemChamCong.resources

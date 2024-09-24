@@ -39,11 +39,14 @@
             this.LanKy = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThoiGian = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HeSoLuong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LuongCoBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.HoTen = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.NoiDung = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel2 = new System.Windows.Forms.Panel();
             this.rtxt_content = new System.Windows.Forms.RichTextBox();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.txt_LuongCoBan = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.txt_NgayKy = new System.Windows.Forms.TextBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.cbb_nv = new System.Windows.Forms.ComboBox();
@@ -62,11 +65,11 @@
             this.txt_SoHD = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
+            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMovePreviousItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorSeparator = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorPositionItem = new System.Windows.Forms.ToolStripTextBox();
-            this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.bindingNavigatorMoveNextItem = new System.Windows.Forms.ToolStripButton();
             this.bindingNavigatorMoveLastItem = new System.Windows.Forms.ToolStripButton();
@@ -106,6 +109,7 @@
             this.LanKy,
             this.ThoiGian,
             this.HeSoLuong,
+            this.LuongCoBan,
             this.HoTen,
             this.NoiDung});
             this.dataGridView1.Location = new System.Drawing.Point(6, 582);
@@ -124,7 +128,7 @@
             this.SoHD.MinimumWidth = 6;
             this.SoHD.Name = "SoHD";
             this.SoHD.ReadOnly = true;
-            this.SoHD.Width = 149;
+            this.SoHD.Width = 123;
             // 
             // NgayKy
             // 
@@ -133,7 +137,7 @@
             this.NgayKy.MinimumWidth = 6;
             this.NgayKy.Name = "NgayKy";
             this.NgayKy.ReadOnly = true;
-            this.NgayKy.Width = 106;
+            this.NgayKy.Width = 89;
             // 
             // NgayBatDau
             // 
@@ -142,7 +146,7 @@
             this.NgayBatDau.MinimumWidth = 6;
             this.NgayBatDau.Name = "NgayBatDau";
             this.NgayBatDau.ReadOnly = true;
-            this.NgayBatDau.Width = 148;
+            this.NgayBatDau.Width = 121;
             // 
             // NgayKetThuc
             // 
@@ -151,7 +155,7 @@
             this.NgayKetThuc.MinimumWidth = 6;
             this.NgayKetThuc.Name = "NgayKetThuc";
             this.NgayKetThuc.ReadOnly = true;
-            this.NgayKetThuc.Width = 153;
+            this.NgayKetThuc.Width = 127;
             // 
             // LanKy
             // 
@@ -160,7 +164,7 @@
             this.LanKy.MinimumWidth = 6;
             this.LanKy.Name = "LanKy";
             this.LanKy.ReadOnly = true;
-            this.LanKy.Width = 94;
+            this.LanKy.Width = 79;
             // 
             // ThoiGian
             // 
@@ -169,7 +173,7 @@
             this.ThoiGian.MinimumWidth = 6;
             this.ThoiGian.Name = "ThoiGian";
             this.ThoiGian.ReadOnly = true;
-            this.ThoiGian.Width = 118;
+            this.ThoiGian.Width = 97;
             // 
             // HeSoLuong
             // 
@@ -178,7 +182,15 @@
             this.HeSoLuong.MinimumWidth = 6;
             this.HeSoLuong.Name = "HeSoLuong";
             this.HeSoLuong.ReadOnly = true;
-            this.HeSoLuong.Width = 140;
+            this.HeSoLuong.Width = 117;
+            // 
+            // LuongCoBan
+            // 
+            this.LuongCoBan.DataPropertyName = "LuongCoBan";
+            this.LuongCoBan.HeaderText = "Lương cơ bản";
+            this.LuongCoBan.Name = "LuongCoBan";
+            this.LuongCoBan.ReadOnly = true;
+            this.LuongCoBan.Width = 126;
             // 
             // HoTen
             // 
@@ -187,7 +199,7 @@
             this.HoTen.MinimumWidth = 6;
             this.HoTen.Name = "HoTen";
             this.HoTen.ReadOnly = true;
-            this.HoTen.Width = 95;
+            this.HoTen.Width = 80;
             // 
             // NoiDung
             // 
@@ -196,7 +208,7 @@
             this.NoiDung.MinimumWidth = 6;
             this.NoiDung.Name = "NoiDung";
             this.NoiDung.ReadOnly = true;
-            this.NoiDung.Width = 117;
+            this.NoiDung.Width = 96;
             // 
             // panel2
             // 
@@ -222,6 +234,8 @@
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.txt_LuongCoBan);
+            this.panel1.Controls.Add(this.label9);
             this.panel1.Controls.Add(this.txt_NgayKy);
             this.panel1.Controls.Add(this.groupBox1);
             this.panel1.Controls.Add(this.cbb_nv);
@@ -244,11 +258,27 @@
             this.panel1.Size = new System.Drawing.Size(1240, 137);
             this.panel1.TabIndex = 7;
             // 
+            // txt_LuongCoBan
+            // 
+            this.txt_LuongCoBan.Location = new System.Drawing.Point(791, 0);
+            this.txt_LuongCoBan.Name = "txt_LuongCoBan";
+            this.txt_LuongCoBan.Size = new System.Drawing.Size(100, 26);
+            this.txt_LuongCoBan.TabIndex = 19;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(679, 5);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(106, 19);
+            this.label9.TabIndex = 18;
+            this.label9.Text = "Lương cơ bản:";
+            // 
             // txt_NgayKy
             // 
             this.txt_NgayKy.Location = new System.Drawing.Point(131, 32);
             this.txt_NgayKy.Name = "txt_NgayKy";
-            this.txt_NgayKy.Size = new System.Drawing.Size(170, 31);
+            this.txt_NgayKy.Size = new System.Drawing.Size(170, 26);
             this.txt_NgayKy.TabIndex = 17;
             // 
             // groupBox1
@@ -266,7 +296,7 @@
             this.cbb_nv.FormattingEnabled = true;
             this.cbb_nv.Location = new System.Drawing.Point(491, 100);
             this.cbb_nv.Name = "cbb_nv";
-            this.cbb_nv.Size = new System.Drawing.Size(170, 30);
+            this.cbb_nv.Size = new System.Drawing.Size(170, 27);
             this.cbb_nv.TabIndex = 15;
             // 
             // cbb_heSoLuong
@@ -274,10 +304,11 @@
             this.cbb_heSoLuong.FormattingEnabled = true;
             this.cbb_heSoLuong.Items.AddRange(new object[] {
             "1",
+            "1.5",
             "2"});
             this.cbb_heSoLuong.Location = new System.Drawing.Point(491, 66);
             this.cbb_heSoLuong.Name = "cbb_heSoLuong";
-            this.cbb_heSoLuong.Size = new System.Drawing.Size(170, 30);
+            this.cbb_heSoLuong.Size = new System.Drawing.Size(170, 27);
             this.cbb_heSoLuong.TabIndex = 14;
             // 
             // cbb_ThoiGian
@@ -291,7 +322,7 @@
             "5 năm"});
             this.cbb_ThoiGian.Location = new System.Drawing.Point(491, 32);
             this.cbb_ThoiGian.Name = "cbb_ThoiGian";
-            this.cbb_ThoiGian.Size = new System.Drawing.Size(170, 30);
+            this.cbb_ThoiGian.Size = new System.Drawing.Size(170, 27);
             this.cbb_ThoiGian.TabIndex = 13;
             // 
             // cbb_LanKy
@@ -305,7 +336,7 @@
             "Lần 5"});
             this.cbb_LanKy.Location = new System.Drawing.Point(491, -2);
             this.cbb_LanKy.Name = "cbb_LanKy";
-            this.cbb_LanKy.Size = new System.Drawing.Size(170, 30);
+            this.cbb_LanKy.Size = new System.Drawing.Size(170, 27);
             this.cbb_LanKy.TabIndex = 12;
             // 
             // label8
@@ -313,7 +344,7 @@
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(366, 106);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(124, 23);
+            this.label8.Size = new System.Drawing.Size(101, 19);
             this.label8.TabIndex = 11;
             this.label8.Text = "Nhân viên ký:";
             // 
@@ -322,7 +353,7 @@
             this.label7.AutoSize = true;
             this.label7.Location = new System.Drawing.Point(366, 74);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(117, 23);
+            this.label7.Size = new System.Drawing.Size(97, 19);
             this.label7.TabIndex = 10;
             this.label7.Text = "Hệ số lương:";
             // 
@@ -331,7 +362,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(366, 40);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(95, 23);
+            this.label6.Size = new System.Drawing.Size(77, 19);
             this.label6.TabIndex = 9;
             this.label6.Text = "Thời gian:";
             // 
@@ -340,7 +371,7 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(366, 6);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(71, 23);
+            this.label5.Size = new System.Drawing.Size(59, 19);
             this.label5.TabIndex = 8;
             this.label5.Text = "Lần ký:";
             // 
@@ -349,7 +380,7 @@
             this.dateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker2.Location = new System.Drawing.Point(131, 100);
             this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(170, 31);
+            this.dateTimePicker2.Size = new System.Drawing.Size(170, 26);
             this.dateTimePicker2.TabIndex = 7;
             // 
             // label4
@@ -357,7 +388,7 @@
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(3, 108);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(130, 23);
+            this.label4.Size = new System.Drawing.Size(107, 19);
             this.label4.TabIndex = 6;
             this.label4.Text = "Ngày kết thúc:";
             // 
@@ -366,7 +397,7 @@
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dateTimePicker1.Location = new System.Drawing.Point(131, 66);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(170, 31);
+            this.dateTimePicker1.Size = new System.Drawing.Size(170, 26);
             this.dateTimePicker1.TabIndex = 5;
             // 
             // label3
@@ -374,7 +405,7 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 74);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 23);
+            this.label3.Size = new System.Drawing.Size(101, 19);
             this.label3.TabIndex = 4;
             this.label3.Text = "Ngày bắt đầu:";
             // 
@@ -383,7 +414,7 @@
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 40);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(83, 23);
+            this.label2.Size = new System.Drawing.Size(69, 19);
             this.label2.TabIndex = 2;
             this.label2.Text = "Ngày ký:";
             // 
@@ -391,7 +422,7 @@
             // 
             this.txt_SoHD.Location = new System.Drawing.Point(131, -2);
             this.txt_SoHD.Name = "txt_SoHD";
-            this.txt_SoHD.Size = new System.Drawing.Size(170, 31);
+            this.txt_SoHD.Size = new System.Drawing.Size(170, 26);
             this.txt_SoHD.TabIndex = 1;
             // 
             // label1
@@ -399,7 +430,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 6);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(121, 23);
+            this.label1.Size = new System.Drawing.Size(99, 19);
             this.label1.TabIndex = 0;
             this.label1.Text = "Số hợp đồng:";
             // 
@@ -430,13 +461,20 @@
             this.bindingNavigator1.TabIndex = 8;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
+            // bindingNavigatorCountItem
+            // 
+            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
+            this.bindingNavigatorCountItem.Text = "of {0}";
+            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
+            // 
             // bindingNavigatorMoveFirstItem
             // 
             this.bindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image;
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -445,7 +483,7 @@
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -463,16 +501,9 @@
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
-            // bindingNavigatorCountItem
-            // 
-            this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
-            this.bindingNavigatorCountItem.Text = "of {0}";
-            this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
-            // 
             // bindingNavigatorSeparator1
             // 
-            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator1.Name = "bindingNavigatorSeparator1";
             this.bindingNavigatorSeparator1.Size = new System.Drawing.Size(6, 27);
             // 
             // bindingNavigatorMoveNextItem
@@ -481,7 +512,7 @@
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -490,17 +521,17 @@
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
             // 
-            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator";
+            this.bindingNavigatorSeparator2.Name = "bindingNavigatorSeparator2";
             this.bindingNavigatorSeparator2.Size = new System.Drawing.Size(6, 27);
             // 
             // HopDong
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 22F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1264, 753);
             this.Controls.Add(this.bindingNavigator1);
@@ -532,15 +563,6 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.RichTextBox rtxt_content;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoHD;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayBatDau;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKetThuc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn LanKy;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HeSoLuong;
-        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
-        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDung;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox txt_NgayKy;
         private System.Windows.Forms.GroupBox groupBox1;
@@ -570,5 +592,17 @@
         private System.Windows.Forms.ToolStripButton bindingNavigatorMoveLastItem;
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.BindingSource bindingSource1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn SoHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayBatDau;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NgayKetThuc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LanKy;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ThoiGian;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeSoLuong;
+        private System.Windows.Forms.DataGridViewTextBoxColumn LuongCoBan;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HoTen;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NoiDung;
+        private System.Windows.Forms.TextBox txt_LuongCoBan;
+        private System.Windows.Forms.Label label9;
     }
 }

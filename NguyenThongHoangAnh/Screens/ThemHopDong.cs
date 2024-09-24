@@ -19,7 +19,7 @@ namespace NguyenThongHoangAnh.Screens
             LoadForm();
         }
 
-        public delegate void them(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, string ThoiGian, string NoiDung, int MaNV);
+        public delegate void them(string SoHD, DateTime NgayKy, DateTime NgayBatDau, DateTime NgayKetThuc, int LanKy, double HeSoLuong, double LuongCoBan, string ThoiGian, string NoiDung, int MaNV);
         public event them ThemEvent;
 
         #region Function
@@ -114,10 +114,11 @@ namespace NguyenThongHoangAnh.Screens
             DateTime NgayKetThuc = dateTimePicker2.Value.Date;
             int LanKy = int.Parse(cbb_LanKy.Text);
             double HeSoLuong = double.Parse(cbb_heSoLuong.Text);
+            double LuongCoBan = double.Parse(txt_LuongCoBan.Text);
             string ThoiGian = cbb_ThoiGian.Text;
             string NoiDung = rtxt_content.Rtf;
             int MaNV =  int.Parse(cbb_nv.SelectedValue.ToString());
-            ThemEvent(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, HeSoLuong, ThoiGian, NoiDung, MaNV);
+            ThemEvent(SoHD, NgayKy, NgayBatDau, NgayKetThuc, LanKy, HeSoLuong, LuongCoBan, ThoiGian, NoiDung, MaNV);
         }
 
         private void btn_cancel_Click(object sender, EventArgs e)

@@ -1,6 +1,6 @@
 ﻿namespace NguyenThongHoangAnh.Screens
 {
-    partial class PhuCap
+    partial class LoaiPhep
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhuCap));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoaiPhep));
             this.bindingNavigator1 = new System.Windows.Forms.BindingNavigator(this.components);
             this.bindingNavigatorCountItem = new System.Windows.Forms.ToolStripLabel();
             this.bindingNavigatorMoveFirstItem = new System.Windows.Forms.ToolStripButton();
@@ -42,22 +42,22 @@
             this.bindingNavigatorSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.txt_MaPhuCap = new System.Windows.Forms.TextBox();
+            this.txt_TenLoaiPhep = new System.Windows.Forms.TextBox();
+            this.txt_MaLoaiPhep = new System.Windows.Forms.TextBox();
             this.bindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.label1 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.MaPhuCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenPhuCap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaLoaiPhep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenLoaiPhep = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HeSo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
             this.btn_Sua = new System.Windows.Forms.Button();
             this.btn_Xoa = new System.Windows.Forms.Button();
             this.btn_Them = new System.Windows.Forms.Button();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.txt_SoTien = new System.Windows.Forms.TextBox();
-            this.txt_TenPhuCap = new System.Windows.Forms.TextBox();
+            this.txt_HeSo = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).BeginInit();
             this.bindingNavigator1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -167,34 +167,41 @@
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(3, 78);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 19);
+            this.label3.Size = new System.Drawing.Size(48, 19);
             this.label3.TabIndex = 4;
-            this.label3.Text = "Số tiền:";
+            this.label3.Text = "Hệ số:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(3, 45);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(87, 19);
+            this.label2.Size = new System.Drawing.Size(94, 19);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Tên phụ cấp:";
+            this.label2.Text = "Tên loại phép:";
             // 
-            // txt_MaPhuCap
+            // txt_TenLoaiPhep
             // 
-            this.txt_MaPhuCap.Location = new System.Drawing.Point(102, 6);
-            this.txt_MaPhuCap.Name = "txt_MaPhuCap";
-            this.txt_MaPhuCap.Size = new System.Drawing.Size(80, 26);
-            this.txt_MaPhuCap.TabIndex = 1;
+            this.txt_TenLoaiPhep.Location = new System.Drawing.Point(102, 38);
+            this.txt_TenLoaiPhep.Name = "txt_TenLoaiPhep";
+            this.txt_TenLoaiPhep.Size = new System.Drawing.Size(206, 26);
+            this.txt_TenLoaiPhep.TabIndex = 2;
+            // 
+            // txt_MaLoaiPhep
+            // 
+            this.txt_MaLoaiPhep.Location = new System.Drawing.Point(102, 6);
+            this.txt_MaLoaiPhep.Name = "txt_MaLoaiPhep";
+            this.txt_MaLoaiPhep.Size = new System.Drawing.Size(80, 26);
+            this.txt_MaLoaiPhep.TabIndex = 1;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(3, 13);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(85, 19);
+            this.label1.Size = new System.Drawing.Size(92, 19);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Mã phụ cấp:";
+            this.label1.Text = "Mã loại phép:";
             // 
             // panel4
             // 
@@ -212,9 +219,9 @@
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaPhuCap,
-            this.TenPhuCap,
-            this.SoTien});
+            this.MaLoaiPhep,
+            this.TenLoaiPhep,
+            this.HeSo});
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
@@ -222,29 +229,29 @@
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellEnter += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellEnter);
             // 
-            // MaPhuCap
+            // MaLoaiPhep
             // 
-            this.MaPhuCap.DataPropertyName = "MaPhuCap";
-            this.MaPhuCap.HeaderText = "Mã phụ cấp";
-            this.MaPhuCap.Name = "MaPhuCap";
-            this.MaPhuCap.ReadOnly = true;
-            this.MaPhuCap.Width = 107;
+            this.MaLoaiPhep.DataPropertyName = "MaLoaiPhep";
+            this.MaLoaiPhep.HeaderText = "Mã Loại phép";
+            this.MaLoaiPhep.Name = "MaLoaiPhep";
+            this.MaLoaiPhep.ReadOnly = true;
+            this.MaLoaiPhep.Width = 120;
             // 
-            // TenPhuCap
+            // TenLoaiPhep
             // 
-            this.TenPhuCap.DataPropertyName = "TenPhuCap";
-            this.TenPhuCap.HeaderText = "Tên phụ cấp";
-            this.TenPhuCap.Name = "TenPhuCap";
-            this.TenPhuCap.ReadOnly = true;
-            this.TenPhuCap.Width = 109;
+            this.TenLoaiPhep.DataPropertyName = "TenLoaiPhep";
+            this.TenLoaiPhep.HeaderText = "Tên loại phép";
+            this.TenLoaiPhep.Name = "TenLoaiPhep";
+            this.TenLoaiPhep.ReadOnly = true;
+            this.TenLoaiPhep.Width = 116;
             // 
-            // SoTien
+            // HeSo
             // 
-            this.SoTien.DataPropertyName = "SoTien";
-            this.SoTien.HeaderText = "Số tiền";
-            this.SoTien.Name = "SoTien";
-            this.SoTien.ReadOnly = true;
-            this.SoTien.Width = 76;
+            this.HeSo.DataPropertyName = "HeSo";
+            this.HeSo.HeaderText = "Hệ số";
+            this.HeSo.Name = "HeSo";
+            this.HeSo.ReadOnly = true;
+            this.HeSo.Width = 70;
             // 
             // panel1
             // 
@@ -298,33 +305,25 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.txt_SoTien);
+            this.panel2.Controls.Add(this.txt_HeSo);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
-            this.panel2.Controls.Add(this.txt_TenPhuCap);
-            this.panel2.Controls.Add(this.txt_MaPhuCap);
+            this.panel2.Controls.Add(this.txt_TenLoaiPhep);
+            this.panel2.Controls.Add(this.txt_MaLoaiPhep);
             this.panel2.Controls.Add(this.label1);
             this.panel2.Location = new System.Drawing.Point(3, 3);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(434, 102);
             this.panel2.TabIndex = 0;
             // 
-            // txt_SoTien
+            // txt_HeSo
             // 
-            this.txt_SoTien.Location = new System.Drawing.Point(102, 70);
-            this.txt_SoTien.Name = "txt_SoTien";
-            this.txt_SoTien.Size = new System.Drawing.Size(100, 26);
-            this.txt_SoTien.TabIndex = 5;
-            this.txt_SoTien.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txt_SoTien_KeyPress);
+            this.txt_HeSo.Location = new System.Drawing.Point(102, 70);
+            this.txt_HeSo.Name = "txt_HeSo";
+            this.txt_HeSo.Size = new System.Drawing.Size(100, 26);
+            this.txt_HeSo.TabIndex = 6;
             // 
-            // txt_TenPhuCap
-            // 
-            this.txt_TenPhuCap.Location = new System.Drawing.Point(102, 38);
-            this.txt_TenPhuCap.Name = "txt_TenPhuCap";
-            this.txt_TenPhuCap.Size = new System.Drawing.Size(206, 26);
-            this.txt_TenPhuCap.TabIndex = 2;
-            // 
-            // PhuCap
+            // LoaiPhep
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -333,9 +332,9 @@
             this.Controls.Add(this.panel1);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "PhuCap";
+            this.Name = "LoaiPhep";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "PhuCap";
+            this.Text = "LoaiPhep";
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
             this.bindingNavigator1.ResumeLayout(false);
             this.bindingNavigator1.PerformLayout();
@@ -365,7 +364,8 @@
         private System.Windows.Forms.ToolStripSeparator bindingNavigatorSeparator2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox txt_MaPhuCap;
+        private System.Windows.Forms.TextBox txt_TenLoaiPhep;
+        private System.Windows.Forms.TextBox txt_MaLoaiPhep;
         private System.Windows.Forms.BindingSource bindingSource1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel4;
@@ -376,10 +376,9 @@
         private System.Windows.Forms.Button btn_Xoa;
         private System.Windows.Forms.Button btn_Them;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox txt_SoTien;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaPhuCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenPhuCap;
-        private System.Windows.Forms.DataGridViewTextBoxColumn SoTien;
-        private System.Windows.Forms.TextBox txt_TenPhuCap;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaLoaiPhep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenLoaiPhep;
+        private System.Windows.Forms.DataGridViewTextBoxColumn HeSo;
+        private System.Windows.Forms.TextBox txt_HeSo;
     }
 }
